@@ -134,6 +134,11 @@ See `docs/company-registry.md` for full details.
 | 07 | Hayward Agencies Ltd | #0D3B6E (navy) | #E8402A (red) | H-block angular, "HAL" |
 | 08 | Mercpat Investment Ltd | #1E4D1A (dark green) | #E8B020 (gold) | Circle filled "M" |
 | 09 | Crisima General Supplies | #4A1A60 (violet) | #1AB8E8 (cyan) | Octagon, "CGS" |
+| 10 | Tobi Solutions | #5C3010 (brown) | #E8A020 (amber) | Parallelogram, "TBS" |
+| 11 | Linkmi Services Ltd | #0A4C7A (steel blue) | #35A8E0 (sky) | Venn circles, "LML" |
+| 12 | Sakamu Enterprises Ltd | #2D5016 (olive green) | #C8A020 (gold) | Interlocking squares, "SAK" |
+| 13 | Lifobird Investment Ltd | #3D1060 (deep purple) | #E8A030 (amber) | Bird wings, "LIL" |
+| 14 | Mastrick Solutions | #1C1C3A (near-black) | #A8A8C0 (silver) | Letterpress "M", double border |
 
 ---
 
