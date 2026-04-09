@@ -34,6 +34,8 @@ Each company listed here has a **locked design identity**. When they appear in a
 - **Address:** Nairobi, Kenya
 - **Quote history:**
   - `02_Epic_Furniture.html` — Office Furniture, 8 Apr 2026, REF: ECL-Q/2026/04/009, KES 2,360,500
+  - `12_Epic_Furniture.html` — Office Furniture, 10 Apr 2026, REF: ECL-Q/2026/04/011, KES 2,024,000
+  - `18_Epic_Equipment.html` — Office Equipment, 10 Apr 2026, REF: ECL-Q/2026/04/012, KES 2,307,000
 
 ---
 
@@ -106,6 +108,7 @@ Each company listed here has a **locked design identity**. When they appear in a
 - **Address:** Nairobi, Kenya
 - **Quote history:**
   - `07_Hayward_Equipment_Kitchen.html` — Office + Kitchen Equipment, 9 Apr 2026, REF: HAL/QT/APR2026/07, KES 2,068,000
+  - `15_Hayward_Equipment_Kitchen.html` — Office + Kitchen Equipment, 10 Apr 2026, REF: HAL/QT/APR2026/08, KES 1,780,500
 
 ---
 
@@ -120,6 +123,7 @@ Each company listed here has a **locked design identity**. When they appear in a
 - **Address:** Nairobi, Kenya
 - **Quote history:**
   - `08_Mercpat_Equipment_Kitchen.html` — Office + Kitchen Equipment, 8 Apr 2026, REF: MIL-QN/2026/008, KES 2,276,500
+  - `17_Mercpat_Equipment.html` — Office Equipment, 8 Apr 2026, REF: MIL-QN/2026/009, KES 2,216,000
 
 ---
 
@@ -137,15 +141,89 @@ Each company listed here has a **locked design identity**. When they appear in a
 
 ---
 
+---
+
+### Tobi Solutions
+- **Slug:** `Tobi`
+- **Primary colour:** `#5C3010` (warm brown)
+- **Accent colour:** `#E8A020` (amber orange)
+- **Row highlight:** `#FBF5F0`
+- **Logo mark:** Parallelogram / corner-cut rectangle, `TBS` / `SOLUTIONS` text
+- **Header style:** Stacked stripe (brown top 14px + amber 4px + cream 4px), dark brown logo panel left (100px), company name centre, bordered badge right
+- **Footer style:** Split flex — amber company name left, contact right on dark brown
+- **Email:** wamalwatobias980@gmail.com
+- **Address:** Nairobi, Kenya
+- **Quote history:**
+  - `10_Tobi_Furniture.html` — Office Furniture, 9 Apr 2026, REF: TBS/QTN-001/APR/2026, KES 1,748,000
+
+---
+
+### Linkmi Services Ltd
+- **Slug:** `Linkmi`
+- **Primary colour:** `#0A4C7A` (steel blue)
+- **Accent colour:** `#35A8E0` (sky blue)
+- **Row highlight:** `#EAF4FB`
+- **Logo mark:** Overlapping circles (Venn), `LML` / `SERVICES` text
+- **Header style:** Steel blue full banner, dot grid SVG background, Venn logo left, rounded pill badge right
+- **Footer style:** Solid blue bar, centred white text
+- **Email:** linkmiservicesltd@gmail.com
+- **Address:** Nairobi, Kenya
+- **Quote history:**
+  - `11_Linkmi_Furniture.html` — Office Furniture, 8 Apr 2026, REF: LML/QTN-002/APR/2026, KES 1,929,000
+
+---
+
+### Sakamu Enterprises Ltd
+- **Slug:** `Sakamu`
+- **Primary colour:** `#2D5016` (dark olive green)
+- **Accent colour:** `#C8A020` (gold)
+- **Row highlight:** `#EFF7E8`
+- **Logo mark:** Interlocking squares (two overlapping squares), `SAK` / `ENT` text
+- **Header style:** Dark olive full banner, chevron/corner accent SVG right, interlocking squares logo left
+- **Footer style:** Split flex — gold company name left, contact right on dark green
+- **Email:** sakamuenterprisesltd@gmail.com
+- **Address:** Nairobi, Kenya
+- **Quote history:**
+  - `13_Sakamu_Equipment_Kitchen.html` — Office + Kitchen Equipment, 9 Apr 2026, REF: SAK/QTN-001/APR/2026, KES 1,556,000
+
+---
+
+### Lifobird Investment Ltd
+- **Slug:** `Lifobird`
+- **Primary colour:** `#3D1060` (deep purple)
+- **Accent colour:** `#E8A030` (amber gold)
+- **Row highlight:** `#F2EAFA`
+- **Logo mark:** Bird-wing / circle with wing paths, `LIL` text
+- **Header style:** Deep purple full banner, arc/ellipse gradient mesh SVG, bird logo left, outlined badge right
+- **Footer style:** Solid purple bar, centred white text
+- **Address:** Nairobi, Kenya
+- **Quote history:**
+  - `14_Lifobird_Equipment_Kitchen.html` — Office + Kitchen Equipment, 8 Apr 2026, REF: LIL/QTN-003/APR/2026, KES 1,713,000
+
+---
+
+### Mastrick Solutions
+- **Slug:** `Mastrick`
+- **Primary colour:** `#1C1C3A` (near-black navy)
+- **Accent colour:** `#A8A8C0` (silver grey)
+- **Row highlight:** `#F0F0F8`
+- **Logo mark:** Double border square, large `M` letterform, silver underline + `MST` subtext
+- **Header style:** Letterpress emboss — deep navy with grid lines, silver left stripe (5px), logo left, outlined badge right
+- **Footer style:** Split flex — silver company name left, contact right on dark navy
+- **Email:** mastricksolution@gmail.com
+- **Address:** Nairobi, Kenya
+- **Quote history:**
+  - `16_Mastrick_Equipment.html` — Office Equipment, 9 Apr 2026, REF: MST/QTN-001/APR/2026, KES 2,015,000
+
+---
+
 ## AVAILABLE DESIGN CONCEPTS (for new companies)
 
 These design styles have NOT yet been used and are reserved for future companies:
 
-- Overlapping circles / Venn logo mark
 - Triangular chevron banner (left-pointing)
-- Letterpress emboss style (white on dark, no colour fill)
-- Gradient mesh background header
-- Horizontal stripe stack (3-colour)
-- Corner-cut rectangle logo (parallelogram)
-- Rounded pill badge with dot grid background
-- Interlocking squares logo mark
+- Gradient mesh background header (partial — used in Lifobird with arcs)
+- Horizontal stripe stack (3-colour — used in Tobi)
+- Wave/ripple banner
+- Stacked pentagon / shield row
+- Double-diagonal split (three-colour)

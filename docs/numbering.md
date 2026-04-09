@@ -1,6 +1,6 @@
 # Quote Numbering
 
-## Next available quote number: **10**
+## Next available quote number: **19**
 
 ## History
 
@@ -15,6 +15,15 @@
 | 07 | Hayward Agencies Ltd | Equipment + Kitchen | 9 Apr 2026 | KES 2,068,000 |
 | 08 | Mercpat Investment Ltd | Equipment + Kitchen | 8 Apr 2026 | KES 2,276,500 |
 | 09 | Crisima General Supplies | Equipment + Kitchen | 10 Apr 2026 | KES 2,383,500 |
+| 10 | Tobi Solutions | Furniture | 9 Apr 2026 | KES 1,748,000 |
+| 11 | Linkmi Services Ltd | Furniture | 8 Apr 2026 | KES 1,929,000 |
+| 12 | Epic Capital Ltd | Furniture | 10 Apr 2026 | KES 2,024,000 |
+| 13 | Sakamu Enterprises Ltd | Equipment + Kitchen | 9 Apr 2026 | KES 1,556,000 |
+| 14 | Lifobird Investment Ltd | Equipment + Kitchen | 8 Apr 2026 | KES 1,713,000 |
+| 15 | Hayward Agencies Ltd | Equipment + Kitchen | 10 Apr 2026 | KES 1,780,500 |
+| 16 | Mastrick Solutions | Equipment | 9 Apr 2026 | KES 2,015,000 |
+| 17 | Mercpat Investment Ltd | Equipment | 8 Apr 2026 | KES 2,216,000 |
+| 18 | Epic Capital Ltd | Equipment | 10 Apr 2026 | KES 2,307,000 |
 
 ---
 
