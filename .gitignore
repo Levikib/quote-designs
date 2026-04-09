@@ -1,0 +1,12 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Generated PDFs (optional — comment out if you want PDFs in git)
+# quotes/output/*.pdf
+
+# Temp files
+*_new.pdf
+*_v2.pdf
+*.tmp
