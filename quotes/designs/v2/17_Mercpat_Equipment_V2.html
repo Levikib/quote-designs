@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quotation – Mercpat Investment Ltd</title>
+<style>
+  * { box-sizing:border-box; margin:0; padding:0 }
+  body { font-family:'Arial',sans-serif; background:#edf5ec; padding:30px 16px }
+  @page { margin:0 }
+  @media print { body { background:white; padding:0 } }
+
+  /* REVERSED / BOLD-LEFT STYLE */
+  /* Giant QUOTATION label anchors left; company slides to right. Total inversion of convention. */
+  .page { max-width:860px; margin:0 auto; background:white;
+          box-shadow:0 6px 32px rgba(0,0,0,0.13); overflow:hidden }
+
+  /* HEADER — dark green, full width, reversed flow */
+  .header { background:#1E4D1A; position:relative; overflow:hidden; padding:0 }
+
+  /* Bold left panel — the QUOTATION word */
+  .hdr-inner { display:flex; align-items:stretch; min-height:120px }
+
+  .hdr-left { background:#1E4D1A; flex:0 0 220px; display:flex;
+               flex-direction:column; justify-content:center;
+               padding:20px 24px; border-right:3px solid #E8B020; position:relative }
+  .hdr-left::after { content:''; position:absolute; right:-1px; top:0; bottom:0;
+                      width:1px; background:#E8B020; opacity:0.4 }
+
+  .big-qt { font-size:42px; font-weight:900; color:white; line-height:1;
+             letter-spacing:-1px; text-transform:uppercase }
+  .big-qt-sub { font-size:8px; color:rgba(232,176,32,0.7); letter-spacing:3px;
+                 margin-top:5px; text-transform:uppercase }
+
+  /* Right panel — company identity */
+  .hdr-right { flex:1; display:flex; align-items:center; justify-content:flex-end;
+                padding:20px 28px; gap:18px }
+  .company-text { text-align:right }
+  .co-name { font-size:20px; font-weight:900; color:white; letter-spacing:0.3px }
+  .co-tag { font-size:8.5px; color:#E8B020; letter-spacing:2px; margin-top:4px }
+  .co-loc { font-size:9px; color:rgba(255,255,255,0.4); margin-top:3px }
+
+  /* Gold bottom rule */
+  .gold-rule { height:3px; background:#E8B020 }
+  .dark-rule { height:1px; background:rgba(30,77,26,0.2) }
+
+  /* BAND — REF / DATE / VAT in a clean horizontal strip */
+  .meta-band { display:flex; background:#f5fbf5; border-bottom:1px solid #d8ecd8 }
+  .mb-cell { flex:1; padding:10px 20px; border-right:1px solid #d8ecd8 }
+  .mb-cell:last-child { border-right:none }
+  .mb-label { font-size:8px; color:#1E4D1A; font-weight:700; letter-spacing:1.5px;
+               text-transform:uppercase; margin-bottom:3px }
+  .mb-value { font-size:11.5px; font-weight:700; color:#1E4D1A }
+
+  /* RECIPIENT BLOCK — on white, left-border accent */
+  .recipient { padding:14px 28px; display:flex; gap:24px;
+                border-bottom:1px solid #ecf5ec }
+  .rc-item { display:flex; flex-direction:column; gap:3px }
+  .rc-label { font-size:8.5px; color:#E8B020; font-weight:700; letter-spacing:1.5px;
+               text-transform:uppercase }
+  .rc-val { font-size:11.5px; font-weight:700; color:#1E4D1A }
+
+  /* SUBJECT — gold left bar */
+  .subject { padding:12px 28px; border-bottom:1px solid #ecf5ec;
+              border-left:4px solid #E8B020; margin:0 }
+  .s-label { font-size:8px; color:#E8B020; font-weight:700; letter-spacing:2px;
+              text-transform:uppercase; margin-bottom:4px }
+  .s-val { font-size:11.5px; font-weight:700; color:#1E4D1A }
+
+  .intro { font-size:12px; color:#555; line-height:1.7; padding:12px 28px 6px }
+
+  /* TABLE */
+  table.items { width:100%; border-collapse:collapse; font-size:11.5px }
+  table.items thead tr { background:#1E4D1A }
+  table.items thead th { color:white; padding:9px 12px; font-size:11px }
+  table.items tbody td { padding:9px 12px; border-bottom:1px solid #ECF5EA; color:#333 }
+  table.items tbody tr:nth-child(even) { background:#ECF5EA }
+  table.items .num { text-align:center; color:#E8B020; font-weight:800 }
+  table.items .right { text-align:right }
+  table.items .center { text-align:center }
+
+  /* TOTAL — full-width green band */
+  .total-band { background:#1E4D1A; display:flex; justify-content:space-between;
+                 align-items:center; padding:14px 28px; margin-top:0 }
+  .tb-vat { font-size:10px; color:rgba(255,255,255,0.45); font-style:italic }
+  .tb-right { display:flex; align-items:center; gap:24px }
+  .tb-label { font-size:10px; font-weight:700; color:rgba(255,255,255,0.6);
+               letter-spacing:2px; text-transform:uppercase }
+  .tb-amount { font-size:22px; font-weight:900; color:#E8B020 }
+
+  .closing { font-size:12px; color:#555; line-height:1.7; padding:14px 28px 6px }
+
+  .sig-row { display:flex; gap:20px; padding:16px 28px 20px }
+  .sig-col { flex:1; border-top:1.5px solid #E8B020; padding-top:6px;
+              font-size:10px; color:#aaa }
+
+  /* FOOTER */
+  .footer { border-top:2px solid #1E4D1A; border-bottom:3px solid #E8B020;
+             padding:7px 28px; text-align:center; font-size:10px;
+             color:#888; background:#f5fbf5 }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="hdr-inner">
+      <div class="hdr-left">
+        <div class="big-qt">QUOTA<br>TION</div>
+        <div class="big-qt-sub">Official Document</div>
+      </div>
+      <div class="hdr-right">
+        <div class="company-text">
+          <div class="co-name">Mercpat Investment Ltd</div>
+          <div class="co-tag">Equipment &nbsp;·&nbsp; Supply &nbsp;·&nbsp; Investment</div>
+          <div class="co-loc">Nairobi, Kenya</div>
+        </div>
+        <svg width="62" height="62" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="30" cy="30" r="28" fill="rgba(255,255,255,0.08)" stroke="#E8B020" stroke-width="1.5"/>
+          <circle cx="30" cy="30" r="22" fill="none" stroke="rgba(232,176,32,0.3)" stroke-width="1"/>
+          <text x="30" y="36" text-anchor="middle" font-family="Arial" font-weight="900" font-size="22" fill="white">M</text>
+          <rect x="14" y="40" width="32" height="2.5" rx="1.25" fill="#E8B020"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="gold-rule"></div>
+
+  <div class="meta-band">
+    <div class="mb-cell">
+      <div class="mb-label">Reference</div>
+      <div class="mb-value">MIL-QN/2026/009</div>
+    </div>
+    <div class="mb-cell">
+      <div class="mb-label">Date Issued</div>
+      <div class="mb-value">8 April 2026</div>
+    </div>
+    <div class="mb-cell">
+      <div class="mb-label">VAT</div>
+      <div class="mb-value">Inclusive @ 16%</div>
+    </div>
+    <div class="mb-cell">
+      <div class="mb-label">Grand Total</div>
+      <div class="mb-value">KES 2,216,000</div>
+    </div>
+  </div>
+
+  <div class="recipient">
+    <div class="rc-item">
+      <span class="rc-label">Addressed To</span>
+      <span class="rc-val">Ministry of Foreign Affairs Kenya</span>
+    </div>
+    <div class="rc-item">
+      <span class="rc-label">Attention</span>
+      <span class="rc-val">Deputy Director General, AU Regional &amp; Continental Affairs, 316 Chambers</span>
+    </div>
+  </div>
+
+  <div class="subject">
+    <div class="s-label">Subject</div>
+    <div class="s-val">Supply and Delivery of Office Equipment for the AU Regional &amp; Continental Affairs, 316 Chambers</div>
+  </div>
+
+  <p class="intro">Kindly receive our quotation in response to the above-referenced requisition, duly itemised for your review.</p>
+
+  <table class="items">
+    <thead>
+      <tr>
+        <th style="width:5%;text-align:center">#</th>
+        <th style="text-align:left">Item Description</th>
+        <th style="width:9%;text-align:center">Qty</th>
+        <th style="width:17%;text-align:right">Unit Price (KES)</th>
+        <th style="width:17%;text-align:right">Total (KES)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="num">1</td><td>Ecosys Kyocera MA4500ix – SN.WDG5132029 &amp; SN.WDG5131936</td><td class="center">2 Pcs</td><td class="right">258,000</td><td class="right">516,000</td></tr>
+      <tr><td class="num">2</td><td>Atlas Shredder – SN.CC2040 250700039 &amp; SN.CC2040 250700011</td><td class="center">2 Pcs</td><td class="right">95,000</td><td class="right">190,000</td></tr>
+      <tr><td class="num">3</td><td>Desktop Computer, Lenovo Idea Centre All in One, i7, 8GB, 512SSD, 13th Gen – SN.MP2B0P20, SN.MP2B0P3E, SN.MP2B0P34, SN.MP2B0P35, SN.MP2B0P2A</td><td class="center">5 Pcs</td><td class="right">302,000</td><td class="right">1,510,000</td></tr>
+    </tbody>
+  </table>
+
+  <div class="total-band">
+    <span class="tb-vat">All prices inclusive of VAT at 16%</span>
+    <div class="tb-right">
+      <span class="tb-label">Grand Total</span>
+      <span class="tb-amount">KES 2,216,000</span>
+    </div>
+  </div>
+
+  <p class="closing">We remain committed to quality supply and timely delivery as specified above.</p>
+
+  <div class="sig-row">
+    <div class="sig-col">Authorised Signature</div>
+    <div class="sig-col">Name &amp; Designation</div>
+    <div class="sig-col">Company Stamp / Date</div>
+  </div>
+
+  <div class="footer">
+    Mercpat Investment Ltd &nbsp;·&nbsp; Nairobi, Kenya
+  </div>
+
+</div>
+</body>
+</html>

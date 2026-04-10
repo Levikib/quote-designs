@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quotation – Bridgeford Enterprises Ltd</title>
+<style>
+  * { box-sizing:border-box; margin:0; padding:0 }
+  body { font-family:'Arial',sans-serif; background:#e8edf5; padding:30px 16px }
+  @page { margin:0 }
+  @media print { body { background:white; padding:0 } }
+
+  .page { display:flex; max-width:860px; margin:0 auto; min-height:1050px;
+          box-shadow:0 6px 32px rgba(0,0,0,0.15); background:white }
+
+  /* LEFT SIDEBAR — runs full height */
+  .sidebar { width:180px; flex-shrink:0; background:#1B3A6B; display:flex;
+             flex-direction:column; align-items:center; padding:32px 16px; position:relative }
+  .sidebar::after { content:''; position:absolute; top:0; right:0; width:4px;
+                    height:100%; background:#C8A84B }
+
+  .sidebar-logo { width:70px; height:70px; border:2px solid #C8A84B;
+                  display:flex; align-items:center; justify-content:center; margin-bottom:6px }
+  .sidebar-logo-inner { width:52px; height:52px; background:#C8A84B;
+                         display:flex; align-items:center; justify-content:center }
+  .sidebar-logo-inner span { font-size:20px; font-weight:900; color:#1B3A6B; letter-spacing:-1px }
+
+  .sidebar-name { color:white; font-size:13px; font-weight:800; text-align:center;
+                  margin-top:12px; line-height:1.3; letter-spacing:0.3px }
+  .sidebar-tag { color:#C8A84B; font-size:7.5px; letter-spacing:2px; text-align:center;
+                 margin-top:8px; line-height:1.8 }
+  .sidebar-divider { width:40px; height:1px; background:#C8A84B; margin:16px auto; opacity:0.5 }
+  .sidebar-contact { color:rgba(255,255,255,0.45); font-size:8px; text-align:center;
+                     line-height:1.7; margin-top:auto }
+
+  .sidebar-doc-label { margin-top:32px; border:1.5px solid rgba(200,168,75,0.4);
+                        padding:10px 8px; text-align:center; width:100% }
+  .sidebar-doc-label .ql { font-size:7px; color:#C8A84B; letter-spacing:2px; font-weight:700 }
+  .sidebar-doc-label .qt { font-size:16px; font-weight:900; color:white; line-height:1.1;
+                            margin-top:3px }
+
+  /* MAIN CONTENT */
+  .main { flex:1; display:flex; flex-direction:column }
+
+  .top-bar { background:#f4f7fc; padding:18px 28px; border-bottom:3px solid #C8A84B }
+  .top-bar-row { display:flex; justify-content:space-between; align-items:flex-start }
+  .doc-meta { text-align:right }
+  .doc-meta .label { font-size:9px; color:#888; letter-spacing:1.5px; text-transform:uppercase }
+  .doc-meta .value { font-size:13px; font-weight:800; color:#1B3A6B }
+  .doc-meta + .doc-meta { margin-top:8px }
+
+  .to-block { padding:20px 28px; background:white; border-bottom:1px solid #e8e8e8 }
+  .to-label { font-size:9px; color:#888; letter-spacing:1.5px; font-weight:700;
+               text-transform:uppercase; margin-bottom:4px }
+  .to-value { font-size:13px; font-weight:800; color:#1B3A6B }
+  .to-sub { font-size:11.5px; color:#555; margin-top:3px }
+  .subject-bar { background:#1B3A6B; padding:10px 28px; margin-top:0 }
+  .subject-bar span { font-size:11px; font-weight:700; color:#C8A84B; letter-spacing:0.3px }
+
+  .content { padding:22px 28px; flex:1 }
+
+  .intro { font-size:12px; color:#555; margin-bottom:18px; line-height:1.7 }
+
+  table.items { width:100%; border-collapse:collapse; font-size:12px }
+  table.items thead th { background:#1B3A6B; color:white; padding:9px 10px;
+                          font-size:11px; font-weight:700 }
+  table.items thead th:first-child { border-radius:0 }
+  table.items tbody td { padding:9px 10px; border-bottom:1px solid #e8edf5; color:#333 }
+  table.items tbody tr:last-child td { border-bottom:none }
+  table.items tbody tr:hover { background:#f4f7fc }
+  table.items .num { text-align:center; color:#C8A84B; font-weight:700 }
+  table.items .right { text-align:right }
+  table.items .center { text-align:center }
+
+  .totals-row { display:flex; justify-content:flex-end; margin-top:0; }
+  .grand-total { background:#1B3A6B; color:white; padding:14px 24px;
+                  display:flex; align-items:center; gap:24px; min-width:320px }
+  .grand-total .gt-label { font-size:11px; font-weight:700; letter-spacing:1px }
+  .grand-total .gt-amount { font-size:20px; font-weight:900; color:#C8A84B; margin-left:auto }
+
+  .vat-note { font-size:10px; color:#aaa; font-style:italic; margin-top:8px; text-align:right }
+
+  .closing { font-size:12px; color:#555; margin-top:24px; padding-top:16px;
+              border-top:1px solid #e8e8e8; line-height:1.7 }
+
+  .sig-row { display:flex; gap:0; margin-top:28px }
+  .sig-box { flex:1; border-top:2px solid #C8A84B; padding-top:8px; padding-right:24px }
+  .sig-box span { font-size:10px; color:#999 }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="sidebar-logo">
+      <div class="sidebar-logo-inner"><span>BE</span></div>
+    </div>
+    <div class="sidebar-name">Bridgeford<br>Enterprises Ltd</div>
+    <div class="sidebar-tag">SUPPLY<br>PROCUREMENT<br>SOLUTIONS</div>
+    <div class="sidebar-divider"></div>
+    <div class="sidebar-doc-label">
+      <div class="ql">OFFICIAL</div>
+      <div class="qt">QUOTA<br>TION</div>
+    </div>
+    <div class="sidebar-contact">
+      P.O. Box 1572 – 90200<br>Kitui, Kenya<br><br>
+      bridgefordenterprisesltd<br>@gmail.com
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main">
+    <div class="top-bar">
+      <div class="top-bar-row">
+        <div>
+          <div style="font-size:11px;color:#888;letter-spacing:1px">QUOTATION DETAILS</div>
+          <div style="font-size:10px;color:#aaa;margin-top:4px">Ministry of Foreign Affairs Kenya</div>
+        </div>
+        <div style="display:flex;gap:32px">
+          <div class="doc-meta">
+            <div class="label">REF</div>
+            <div class="value">BEL/QTN-001/APR/2026</div>
+          </div>
+          <div class="doc-meta">
+            <div class="label">DATE</div>
+            <div class="value">9 April 2026</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="to-block">
+      <div style="display:flex;gap:48px">
+        <div>
+          <div class="to-label">To</div>
+          <div class="to-value">Ministry of Foreign Affairs Kenya</div>
+        </div>
+        <div>
+          <div class="to-label">Attention</div>
+          <div class="to-value" style="font-size:12px">French-Africa Summit, 316 Chambers</div>
+        </div>
+      </div>
+    </div>
+    <div class="subject-bar">
+      <span>Supply and Delivery of Office Furniture for the French-Africa Summit, 316 Chambers</span>
+    </div>
+
+    <div class="content">
+      <p class="intro">We are pleased to submit our price quotation for your kind consideration and evaluation as specified below.</p>
+
+      <table class="items">
+        <thead>
+          <tr>
+            <th style="width:5%;text-align:center">#</th>
+            <th style="text-align:left">Item Description</th>
+            <th style="width:9%;text-align:center">Qty</th>
+            <th style="width:16%;text-align:right">Unit Price (KES)</th>
+            <th style="width:16%;text-align:right">Total (KES)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="num">1</td><td>4 Way Workstation</td><td class="center">1 Pc</td><td class="right">560,000</td><td class="right">560,000</td></tr>
+          <tr><td class="num">2</td><td>Executive Cabinet</td><td class="center">1 Pc</td><td class="right">180,000</td><td class="right">180,000</td></tr>
+          <tr><td class="num">3</td><td>High Back Orthopaedic Chair</td><td class="center">3 Pcs</td><td class="right">95,000</td><td class="right">285,000</td></tr>
+          <tr><td class="num">4</td><td>Executive Desk</td><td class="center">2 Pcs</td><td class="right">180,000</td><td class="right">360,000</td></tr>
+          <tr><td class="num">5</td><td>4 Drawer Cabinet</td><td class="center">1 Pc</td><td class="right">98,000</td><td class="right">98,000</td></tr>
+          <tr><td class="num">6</td><td>3 Seater Visitor Chair</td><td class="center">1 Pc</td><td class="right">110,000</td><td class="right">110,000</td></tr>
+          <tr><td class="num">7</td><td>Coffee Lounge</td><td class="center">2 Pcs</td><td class="right">85,000</td><td class="right">170,000</td></tr>
+          <tr><td class="num">8</td><td>Leather Visitor Chairs</td><td class="center">2 Pcs</td><td class="right">55,000</td><td class="right">110,000</td></tr>
+          <tr><td class="num">9</td><td>Executive Chairs</td><td class="center">2 Pcs</td><td class="right">90,000</td><td class="right">180,000</td></tr>
+          <tr><td class="num">10</td><td>In/Out Tray</td><td class="center">2 Pcs</td><td class="right">14,000</td><td class="right">28,000</td></tr>
+          <tr><td class="num">11</td><td>Mahogany Executive Coat Hanger</td><td class="center">2 Pcs</td><td class="right">19,000</td><td class="right">38,000</td></tr>
+        </tbody>
+      </table>
+
+      <div class="totals-row">
+        <div>
+          <div class="grand-total">
+            <span class="gt-label">GRAND TOTAL</span>
+            <span class="gt-amount">KES 2,119,000</span>
+          </div>
+          <div class="vat-note">All prices inclusive of VAT at 16%</div>
+        </div>
+      </div>
+
+      <p class="closing">We remain at your disposal for any clarification and look forward to being of service.</p>
+
+      <div class="sig-row">
+        <div class="sig-box"><span>Authorised Signature &amp; Stamp</span></div>
+        <div class="sig-box"><span>Name &amp; Designation</span></div>
+        <div class="sig-box" style="padding-right:0"><span>Date</span></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

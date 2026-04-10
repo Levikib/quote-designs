@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quotation – Epic Capital Ltd</title>
+<style>
+  * { box-sizing:border-box; margin:0; padding:0 }
+  body { font-family:'Arial',sans-serif; background:#eaf2ea; padding:30px 16px }
+  @page { margin:0 }
+  @media print { body { background:white; padding:0 } }
+
+  .page { max-width:860px; margin:0 auto; background:white;
+          box-shadow:0 6px 32px rgba(0,0,0,0.13); overflow:hidden }
+
+  /* HERO HEADER — full bleed, tall */
+  .hero { background:#1A5C3A; padding:36px 40px 28px; position:relative; overflow:hidden }
+  .hero::before { content:''; position:absolute; right:-60px; top:-60px;
+                  width:300px; height:300px; border-radius:50%;
+                  background:rgba(255,255,255,0.04) }
+  .hero::after { content:''; position:absolute; right:60px; bottom:-80px;
+                 width:200px; height:200px; border-radius:50%;
+                 background:rgba(244,166,29,0.08) }
+  .hero-top { display:flex; align-items:flex-start; justify-content:space-between }
+  .hero-logo { display:flex; align-items:center; gap:18px }
+  .logo-ring { width:72px; height:72px; position:relative }
+  .logo-ring svg { width:72px; height:72px }
+  .hero-name { color:white }
+  .hero-name h1 { font-size:28px; font-weight:900; letter-spacing:0.5px; line-height:1 }
+  .hero-name p { color:rgba(255,255,255,0.55); font-size:10px; letter-spacing:2px; margin-top:6px }
+  .hero-name p2 { color:rgba(255,255,255,0.35); font-size:9px; display:block; margin-top:3px }
+
+  .quotation-badge { text-align:right }
+  .quotation-badge .word { font-size:32px; font-weight:900; color:#F4A61D;
+                            letter-spacing:1px; line-height:1; font-style:italic }
+  .quotation-badge .sub { font-size:9px; color:rgba(255,255,255,0.5);
+                           letter-spacing:1.5px; margin-top:4px }
+
+  /* INFO BAND — horizontal strip below hero */
+  .info-band { background:#F4A61D; display:flex; }
+  .info-cell { flex:1; padding:10px 20px; border-right:1px solid rgba(255,255,255,0.3) }
+  .info-cell:last-child { border-right:none }
+  .info-cell .ic-label { font-size:8px; font-weight:700; letter-spacing:1.5px;
+                          color:rgba(26,92,58,0.7); text-transform:uppercase }
+  .info-cell .ic-value { font-size:12px; font-weight:800; color:#1A5C3A; margin-top:2px }
+
+  /* RECIPIENT BLOCK */
+  .recipient { padding:20px 40px; background:#f8fdf8; border-bottom:2px solid #1A5C3A }
+  .rec-to { font-size:10px; color:#888; letter-spacing:1.5px; font-weight:700; margin-bottom:6px }
+  .rec-name { font-size:14px; font-weight:900; color:#1A5C3A }
+  .rec-attn { font-size:11.5px; color:#555; margin-top:3px }
+  .rec-subject { font-size:11.5px; color:#333; margin-top:8px; font-weight:700;
+                  padding-top:8px; border-top:1px dashed #c8dfc8 }
+
+  /* TABLE — full width, no padding margins */
+  .table-wrap { padding:0 }
+  table.items { width:100%; border-collapse:collapse; font-size:12.5px }
+  table.items thead tr { background:#1A5C3A }
+  table.items thead th { color:white; padding:10px 14px; font-size:11px; font-weight:700 }
+  table.items tbody td { padding:10px 14px; border-bottom:1px solid #EBF5EE; color:#333 }
+  table.items tbody tr:nth-child(even) { background:#f8fdf8 }
+  table.items .num { text-align:center; font-weight:700; color:#F4A61D }
+  table.items .right { text-align:right }
+  table.items .center { text-align:center }
+
+  /* TOTAL FOOTER BAND */
+  .total-band { display:flex; align-items:stretch }
+  .total-left { flex:1; background:#f8fdf8; padding:16px 40px;
+                 display:flex; align-items:center }
+  .total-left span { font-size:10.5px; color:#aaa; font-style:italic }
+  .total-right { background:#1A5C3A; padding:16px 32px;
+                  display:flex; flex-direction:column; align-items:flex-end;
+                  justify-content:center; min-width:300px }
+  .total-right .tl { font-size:10px; color:rgba(255,255,255,0.6);
+                      letter-spacing:1.5px; font-weight:700 }
+  .total-right .ta { font-size:22px; font-weight:900; color:#F4A61D; margin-top:2px }
+
+  /* FOOTER AREA */
+  .footer-content { padding:20px 40px 28px }
+  .closing { font-size:12px; color:#555; line-height:1.7; margin-bottom:24px }
+  .sig-row { display:flex; gap:40px; margin-top:8px }
+  .sig-item { flex:1 }
+  .sig-item .sig-line { border-top:2px solid #F4A61D; padding-top:6px;
+                          font-size:10px; color:#aaa; margin-top:32px }
+
+  .page-footer { background:#1A5C3A; padding:8px 40px; display:flex;
+                  justify-content:space-between; align-items:center }
+  .page-footer span { font-size:10px; color:rgba(255,255,255,0.6); font-weight:600 }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="hero">
+    <div class="hero-top">
+      <div class="hero-logo">
+        <div class="logo-ring">
+          <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="36" cy="36" r="34" fill="none" stroke="#F4A61D" stroke-width="2.5"/>
+            <circle cx="36" cy="36" r="26" fill="rgba(255,255,255,0.08)"/>
+            <text x="36" y="28" text-anchor="middle" font-family="Arial" font-weight="900" font-size="13" fill="#F4A61D" letter-spacing="1">EPIC</text>
+            <text x="36" y="46" text-anchor="middle" font-family="Arial" font-weight="700" font-size="11" fill="white" letter-spacing="0.5">CAPITAL</text>
+            <line x1="16" y1="32" x2="56" y2="32" stroke="#F4A61D" stroke-width="1" opacity="0.5"/>
+          </svg>
+        </div>
+        <div class="hero-name">
+          <h1>Epic Capital Ltd</h1>
+          <p>ENTERPRISE &nbsp;·&nbsp; SUPPLY &nbsp;·&nbsp; SOLUTIONS</p>
+          <p2>Nairobi, Kenya</p2>
+        </div>
+      </div>
+      <div class="quotation-badge">
+        <div class="word">QUOTATION</div>
+        <div class="sub">Ministry of Foreign Affairs Kenya</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-band">
+    <div class="info-cell">
+      <div class="ic-label">Reference No.</div>
+      <div class="ic-value">ECL-Q/2026/04/009</div>
+    </div>
+    <div class="info-cell">
+      <div class="ic-label">Date Issued</div>
+      <div class="ic-value">8 April 2026</div>
+    </div>
+    <div class="info-cell">
+      <div class="ic-label">Category</div>
+      <div class="ic-value">Office Furniture</div>
+    </div>
+    <div class="info-cell">
+      <div class="ic-label">VAT</div>
+      <div class="ic-value">Inclusive @ 16%</div>
+    </div>
+  </div>
+
+  <div class="recipient">
+    <div class="rec-to">Addressed To</div>
+    <div class="rec-name">Ministry of Foreign Affairs Kenya</div>
+    <div class="rec-attn">French-Africa Summit, 316 Chambers</div>
+    <div class="rec-subject">Supply and Delivery of Office Furniture for the French-Africa Summit, 316 Chambers</div>
+  </div>
+
+  <div class="table-wrap">
+    <table class="items">
+      <thead>
+        <tr>
+          <th style="width:5%;text-align:center">#</th>
+          <th style="text-align:left">Item Description</th>
+          <th style="width:9%;text-align:center">Qty</th>
+          <th style="width:16%;text-align:right">Unit Price (KES)</th>
+          <th style="width:16%;text-align:right">Total (KES)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="num">1</td><td>4 Way Workstation</td><td class="center">1 Pc</td><td class="right">530,000</td><td class="right">530,000</td></tr>
+        <tr><td class="num">2</td><td>Executive Cabinet</td><td class="center">1 Pc</td><td class="right">172,000</td><td class="right">172,000</td></tr>
+        <tr><td class="num">3</td><td>High Back Orthopaedic Chair</td><td class="center">3 Pcs</td><td class="right">92,000</td><td class="right">276,000</td></tr>
+        <tr><td class="num">4</td><td>Executive Desk</td><td class="center">2 Pcs</td><td class="right">172,000</td><td class="right">344,000</td></tr>
+        <tr><td class="num">5</td><td>4 Drawer Cabinet</td><td class="center">1 Pc</td><td class="right">95,000</td><td class="right">95,000</td></tr>
+        <tr><td class="num">6</td><td>3 Seater Visitor Chair</td><td class="center">1 Pc</td><td class="right">105,000</td><td class="right">105,000</td></tr>
+        <tr><td class="num">7</td><td>Coffee Lounge</td><td class="center">2 Pcs</td><td class="right">82,000</td><td class="right">164,000</td></tr>
+        <tr><td class="num">8</td><td>Leather Visitor Chairs</td><td class="center">2 Pcs</td><td class="right">50,000</td><td class="right">100,000</td></tr>
+        <tr><td class="num">9</td><td>Executive Chairs</td><td class="center">2 Pcs</td><td class="right">88,000</td><td class="right">176,000</td></tr>
+        <tr><td class="num">10</td><td>In/Out Tray</td><td class="center">2 Pcs</td><td class="right">13,000</td><td class="right">26,000</td></tr>
+        <tr><td class="num">11</td><td>Mahogany Executive Coat Hanger</td><td class="center">2 Pcs</td><td class="right">18,000</td><td class="right">36,000</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="total-band">
+    <div class="total-left"><span>All prices inclusive of VAT at 16%</span></div>
+    <div class="total-right">
+      <div class="tl">GRAND TOTAL</div>
+      <div class="ta">KES 2,024,000</div>
+    </div>
+  </div>
+
+  <div class="footer-content">
+    <p class="closing">We remain at your disposal for any clarification and hope to be of service.</p>
+    <div class="sig-row">
+      <div class="sig-item"><div class="sig-line">Authorised Signature &amp; Stamp</div></div>
+      <div class="sig-item"><div class="sig-line">Name, Designation &amp; Date</div></div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span>Epic Capital Ltd</span>
+    <span>Nairobi, Kenya</span>
+  </div>
+
+</div>
+</body>
+</html>

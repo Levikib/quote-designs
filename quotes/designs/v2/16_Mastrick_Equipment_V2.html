@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quotation – Mastrick Solutions</title>
+<style>
+  * { box-sizing:border-box; margin:0; padding:0 }
+  body { font-family:'Arial',sans-serif; background:#e8e8ec; padding:30px 16px }
+  @page { margin:0 }
+  @media print { body { background:white; padding:0 } }
+
+  /* ULTRA-MINIMAL RULED-PAGE STYLE */
+  /* Like a premium letterhead notepad — white page, ruled lines, everything sparse */
+  .page { max-width:860px; margin:0 auto; background:white;
+          box-shadow:0 6px 32px rgba(0,0,0,0.15); overflow:hidden }
+
+  /* TOP RULE STACK — 3 thin lines, the only decoration at top */
+  .rule-stack { padding:0 }
+  .r1 { height:6px; background:#1C1C3A }
+  .r2 { height:2px; background:#A8A8C0 }
+  .r3 { height:1px; background:#e0e0e8 }
+
+  /* IDENTITY ZONE — no colored box, just large spaced text on white */
+  .identity { padding:28px 48px 20px; display:flex; align-items:flex-start;
+               justify-content:space-between; border-bottom:1px solid #e4e4ec }
+  .id-left { display:flex; align-items:center; gap:20px }
+  .id-company { font-size:26px; font-weight:900; color:#1C1C3A; letter-spacing:-0.5px; line-height:1 }
+  .id-tag { font-size:8.5px; color:#A8A8C0; letter-spacing:2.5px; margin-top:6px;
+             text-transform:uppercase }
+  .id-contact { font-size:9px; color:#bbb; margin-top:3px }
+
+  /* DOC TITLE — no border box, just huge weight contrast */
+  .id-right { text-align:right; padding-top:4px }
+  .doc-word { font-size:34px; font-weight:900; color:#1C1C3A; letter-spacing:-1px;
+               line-height:1; text-transform:uppercase }
+  .doc-ref { font-size:9px; color:#A8A8C0; margin-top:6px; letter-spacing:1px }
+  .doc-date { font-size:9px; color:#bbb; margin-top:2px }
+
+  /* ADDRESS — indented formal block, no table, just spaced lines */
+  .addr-zone { padding:20px 48px; border-bottom:1px solid #ececf2 }
+  .addr-line { display:flex; gap:0; margin-bottom:5px; font-size:12px }
+  .addr-key { color:#A8A8C0; font-size:10px; font-weight:700; letter-spacing:1.5px;
+               width:70px; flex-shrink:0; padding-top:1px; text-transform:uppercase }
+  .addr-val { color:#1C1C3A; font-weight:700 }
+
+  /* SUBJECT — a single ruled line with text, no background */
+  .subject-zone { padding:14px 48px; border-bottom:1px solid #ececf2 }
+  .sz-label { font-size:8.5px; color:#A8A8C0; font-weight:700; letter-spacing:2px;
+               text-transform:uppercase; margin-bottom:4px }
+  .sz-text { font-size:12px; color:#1C1C3A; font-weight:700 }
+
+  /* INTRO */
+  .intro { padding:14px 48px 10px; font-size:11.5px; color:#666; line-height:1.7 }
+
+  /* TABLE — pure, clean, minimal grid */
+  table.items { width:100%; border-collapse:collapse; font-size:11.5px }
+  table.items thead tr { border-bottom:2px solid #1C1C3A }
+  table.items thead th { padding:9px 12px; font-size:9.5px; font-weight:700;
+                          color:#1C1C3A; letter-spacing:1.5px; text-transform:uppercase;
+                          background:white }
+  table.items tbody td { padding:10px 12px; border-bottom:1px solid #f0f0f5; color:#333 }
+  table.items tbody tr:hover { background:#fafafd }
+  table.items .num { text-align:center; color:#A8A8C0; font-weight:800; font-size:10px }
+  table.items .right { text-align:right }
+  table.items .center { text-align:center }
+
+  /* Accent every other row with the lightest possible tint */
+  table.items tbody tr:nth-child(even) td { background:#F8F8FC }
+
+  /* TABLE WRAPPER — horizontal rules above/below */
+  .table-wrap { padding:0 48px; border-top:1px solid #ececf2 }
+
+  /* TOTAL — right-aligned plain text block, no background */
+  .total-zone { padding:16px 48px; display:flex; justify-content:flex-end;
+                 align-items:baseline; gap:40px; border-top:2px solid #1C1C3A }
+  .tz-vat { font-size:9.5px; color:#bbb; font-style:italic }
+  .tz-label { font-size:10px; font-weight:700; color:#1C1C3A; letter-spacing:2px;
+               text-transform:uppercase }
+  .tz-amount { font-size:22px; font-weight:900; color:#1C1C3A; letter-spacing:-0.5px }
+  .tz-group { display:flex; flex-direction:column; align-items:flex-end; gap:2px }
+
+  /* CLOSING */
+  .closing { padding:12px 48px 0; font-size:11.5px; color:#666; line-height:1.7 }
+
+  /* SIGNATURE — three ruled lines, minimal */
+  .sig-zone { padding:20px 48px 28px; display:flex; gap:24px }
+  .sig-line { flex:1; border-top:1px solid #A8A8C0; padding-top:6px;
+               font-size:9px; color:#bbb; letter-spacing:0.5px }
+
+  /* FOOTER — bottom rule stack, same as top (mirrored) */
+  .foot-id { padding:12px 48px; border-top:1px solid #e0e0e8;
+              display:flex; justify-content:space-between; align-items:center }
+  .fi-name { font-size:11px; font-weight:700; color:#1C1C3A }
+  .fi-contact { font-size:9.5px; color:#bbb }
+  .rule-bot-1 { height:2px; background:#A8A8C0 }
+  .rule-bot-2 { height:6px; background:#1C1C3A }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="rule-stack">
+    <div class="r1"></div>
+    <div class="r2"></div>
+    <div class="r3"></div>
+  </div>
+
+  <div class="identity">
+    <div class="id-left">
+      <svg width="60" height="60" viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
+        <rect x="4" y="4" width="60" height="60" rx="4" fill="none" stroke="#1C1C3A" stroke-width="2"/>
+        <rect x="10" y="10" width="48" height="48" rx="3" fill="none" stroke="#A8A8C0" stroke-width="1"/>
+        <text x="34" y="44" text-anchor="middle" font-family="Arial" font-weight="900" font-size="30" fill="#1C1C3A">M</text>
+        <rect x="14" y="50" width="40" height="1.5" rx="0.75" fill="#A8A8C0"/>
+        <text x="34" y="62" text-anchor="middle" font-family="Arial" font-weight="600" font-size="7" fill="#A8A8C0" letter-spacing="1">MST</text>
+      </svg>
+      <div>
+        <div class="id-company">Mastrick Solutions</div>
+        <div class="id-tag">Supply &nbsp;·&nbsp; Procurement &nbsp;·&nbsp; Solutions</div>
+        <div class="id-contact">Nairobi, Kenya &nbsp;·&nbsp; mastricksolution@gmail.com</div>
+      </div>
+    </div>
+    <div class="id-right">
+      <div class="doc-word">Quotation</div>
+      <div class="doc-ref">MST/QTN-001/APR/2026</div>
+      <div class="doc-date">9 April 2026</div>
+    </div>
+  </div>
+
+  <div class="addr-zone">
+    <div class="addr-line">
+      <span class="addr-key">To</span>
+      <span class="addr-val">Ministry of Foreign Affairs Kenya</span>
+    </div>
+    <div class="addr-line">
+      <span class="addr-key">Attn</span>
+      <span class="addr-val">Deputy Director General, AU Regional &amp; Continental Affairs, 316 Chambers</span>
+    </div>
+  </div>
+
+  <div class="subject-zone">
+    <div class="sz-label">Subject</div>
+    <div class="sz-text">Supply and Delivery of Office Equipment for the AU Regional &amp; Continental Affairs, 316 Chambers</div>
+  </div>
+
+  <p class="intro">We are glad to submit our price quotation for your kind consideration and evaluation as specified below.</p>
+
+  <div class="table-wrap">
+    <table class="items">
+      <thead>
+        <tr>
+          <th style="width:5%;text-align:center">#</th>
+          <th style="text-align:left">Item Description</th>
+          <th style="width:9%;text-align:center">Qty</th>
+          <th style="width:16%;text-align:right">Unit Price (KES)</th>
+          <th style="width:16%;text-align:right">Total (KES)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="num">1</td><td>Desktop Computer, Lenovo Idea Centre All in One, i7, 8GB, 512SSD, 13th Gen – SN.MP2B0P20, SN.MP2B0P3E, SN.MP2B0P34, SN.MP2B0P35, SN.MP2B0P2A</td><td class="center">5 Pcs</td><td class="right">275,000</td><td class="right">1,375,000</td></tr>
+        <tr><td class="num">2</td><td>Ecosys Kyocera MA4500ix – SN.WDG5132029 &amp; SN.WDG5131936</td><td class="center">2 Pcs</td><td class="right">235,000</td><td class="right">470,000</td></tr>
+        <tr><td class="num">3</td><td>Atlas Shredder – SN.CC2040 250700039 &amp; SN.CC2040 250700011</td><td class="center">2 Pcs</td><td class="right">85,000</td><td class="right">170,000</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="total-zone">
+    <span class="tz-vat">All prices inclusive of VAT @ 16%</span>
+    <div class="tz-group">
+      <span class="tz-label">Grand Total</span>
+      <span class="tz-amount">KES 2,015,000</span>
+    </div>
+  </div>
+
+  <p class="closing">We remain at your disposal for any clarification and hope to be of service.</p>
+
+  <div class="sig-zone">
+    <div class="sig-line">Authorised Signature</div>
+    <div class="sig-line">Name &amp; Designation</div>
+    <div class="sig-line">Company Stamp / Date</div>
+  </div>
+
+  <div class="foot-id">
+    <span class="fi-name">Mastrick Solutions</span>
+    <span class="fi-contact">Nairobi, Kenya &nbsp;·&nbsp; mastricksolution@gmail.com</span>
+  </div>
+  <div class="rule-bot-1"></div>
+  <div class="rule-bot-2"></div>
+
+</div>
+</body>
+</html>

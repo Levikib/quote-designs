@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quotation – Sakamu Enterprises Ltd</title>
+<style>
+  * { box-sizing:border-box; margin:0; padding:0 }
+  body { font-family:'Arial',sans-serif; background:#f0f4f0; padding:30px 16px }
+  @page { margin:0 }
+  @media print { body { background:white; padding:0 } }
+
+  /* GOVERNMENT MEMO STYLE */
+  .page { max-width:860px; margin:0 auto; background:white;
+          box-shadow:0 6px 32px rgba(0,0,0,0.13); overflow:hidden }
+
+  /* TOP BAR */
+  .topbar { background:#2D5016; height:8px }
+  .gold-topbar { background:#C8A020; height:3px }
+
+  /* HEADER — logo centred, like an official memo */
+  .header { padding:24px 40px 16px; border-bottom:2px solid #2D5016;
+             display:flex; align-items:center; justify-content:space-between }
+  .header-left { display:flex; align-items:center; gap:14px }
+  .company-h h1 { font-size:20px; font-weight:900; color:#2D5016 }
+  .company-h p { font-size:8.5px; color:#aaa; letter-spacing:2px; margin-top:4px }
+  .company-h p2 { font-size:9px; color:#888; display:block; margin-top:2px }
+
+  .header-right { text-align:right }
+  .hr-label { font-size:8px; color:#C8A020; font-weight:700; letter-spacing:2px }
+  .hr-word { font-size:22px; font-weight:900; color:#2D5016; letter-spacing:1px }
+  .hr-ref { font-size:10px; color:#888; margin-top:3px }
+  .hr-ref strong { color:#2D5016 }
+
+  /* MEMO STYLE BODY — indented, formal */
+  .memo-body { padding:22px 40px }
+
+  /* Address block — government memo indented format */
+  .memo-line { display:flex; margin-bottom:7px; align-items:baseline }
+  .memo-key { font-size:12px; font-weight:700; color:#2D5016; width:90px;
+               text-transform:uppercase; letter-spacing:0.5px; flex-shrink:0 }
+  .memo-val { font-size:12.5px; color:#333; font-weight:600 }
+  .memo-val.date-ref { color:#2D5016; font-weight:700 }
+
+  .memo-divider { border:none; border-top:1.5px solid #2D5016; margin:16px 0 }
+  .memo-divider-gold { border:none; border-top:1px solid #C8A020;
+                        margin:0 0 16px; opacity:0.5 }
+
+  /* SUBJECT — centred banner style */
+  .subject-banner { background:#2D5016; margin:16px -40px; padding:10px 40px;
+                     text-align:center }
+  .subject-banner .sl { font-size:8px; color:#C8A020; font-weight:700;
+                          letter-spacing:2px; margin-bottom:3px }
+  .subject-banner .sv { font-size:12px; font-weight:700; color:white }
+
+  .intro { font-size:12px; color:#555; line-height:1.7; margin:18px 0 16px }
+
+  /* SECTION LABEL — formal memo style */
+  .section-header { background:#f5fbf0; border-left:4px solid #2D5016;
+                     padding:7px 16px; margin:16px 0 8px;
+                     display:flex; align-items:center; gap:10px }
+  .sh-num { background:#2D5016; color:white; width:24px; height:24px;
+              border-radius:50%; display:flex; align-items:center;
+              justify-content:center; font-weight:900; font-size:13px; flex-shrink:0 }
+  .sh-text { font-size:12px; font-weight:800; color:#2D5016 }
+
+  table.items { width:100%; border-collapse:collapse; font-size:11.5px }
+  table.items thead tr { background:#2D5016 }
+  table.items thead th { color:white; padding:8px 10px; font-size:11px }
+  table.items tbody td { padding:8px 10px; border-bottom:1px solid #eff7e8; color:#333 }
+  table.items tbody tr:nth-child(even) { background:#f5fbf0 }
+  table.items .num { text-align:center; color:#C8A020; font-weight:800 }
+  table.items .right { text-align:right }
+  table.items .center { text-align:center }
+
+  /* TOTAL — right side, formal box */
+  .total-area { display:flex; justify-content:flex-end; margin-top:16px }
+  .total-box { min-width:320px }
+  .tb-grand { display:flex; justify-content:space-between; align-items:center;
+               background:#2D5016; padding:13px 20px }
+  .tb-grand .tgl { font-size:11px; font-weight:700; color:white; letter-spacing:1px }
+  .tb-grand .tga { font-size:19px; font-weight:900; color:#C8A020 }
+  .tb-vat { font-size:9.5px; color:#aaa; font-style:italic; text-align:right; padding:4px 0 }
+
+  .closing { font-size:12px; color:#555; line-height:1.7; margin-top:20px }
+
+  .sig-row { display:flex; gap:28px; margin-top:24px; padding-top:16px;
+              border-top:1px solid #eee }
+  .sig-col { flex:1; border-top:1.5px solid #C8A020; padding-top:7px;
+              font-size:10px; color:#aaa }
+
+  .footer { background:#2D5016; display:flex; justify-content:space-between;
+             align-items:center; padding:8px 40px; margin-top:24px }
+  .footer .fl { font-size:11px; font-weight:700; color:#C8A020 }
+  .footer .fr { font-size:10px; color:rgba(255,255,255,0.5) }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="topbar"></div>
+  <div class="gold-topbar"></div>
+
+  <div class="header">
+    <div class="header-left">
+      <svg width="60" height="60" viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
+        <rect x="6" y="6" width="38" height="38" rx="3" fill="none" stroke="#C8A020" stroke-width="2"/>
+        <rect x="24" y="24" width="38" height="38" rx="3" fill="rgba(200,160,32,0.15)" stroke="#C8A020" stroke-width="2"/>
+        <rect x="24" y="24" width="20" height="20" rx="2" fill="rgba(200,160,32,0.3)"/>
+        <text x="19" y="23" text-anchor="middle" font-family="Arial" font-weight="900" font-size="11" fill="#C8A020">SAK</text>
+        <text x="43" y="56" text-anchor="middle" font-family="Arial" font-weight="600" font-size="8" fill="rgba(45,80,22,0.7)">ENT</text>
+      </svg>
+      <div class="company-h">
+        <h1>Sakamu Enterprises Ltd</h1>
+        <p>SUPPLY &nbsp;·&nbsp; EQUIPMENT &nbsp;·&nbsp; SOLUTIONS</p>
+        <p2>sakamuenterprisesltd@gmail.com &nbsp;·&nbsp; Nairobi, Kenya</p2>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="hr-label">OFFICIAL</div>
+      <div class="hr-word">QUOTATION</div>
+      <div class="hr-ref">REF: <strong>SAK/QTN-001/APR/2026</strong></div>
+      <div class="hr-ref">DATE: <strong>9 April 2026</strong></div>
+    </div>
+  </div>
+
+  <div class="memo-body">
+    <div class="memo-line">
+      <span class="memo-key">To:</span>
+      <span class="memo-val">Ministry of Foreign Affairs Kenya</span>
+    </div>
+    <div class="memo-line">
+      <span class="memo-key">Attn:</span>
+      <span class="memo-val">French-Africa Summit, 316 Chambers</span>
+    </div>
+
+    <div class="subject-banner">
+      <div class="sl">SUBJECT</div>
+      <div class="sv">Supply and Delivery of Office Equipment and Kitchen Equipment for the French-Africa Summit, 316 Chambers</div>
+    </div>
+
+    <p class="intro">We are glad to submit our price quotation for your kind consideration and evaluation as specified below.</p>
+
+    <div class="section-header">
+      <div class="sh-num">A</div>
+      <div class="sh-text">OFFICE EQUIPMENT</div>
+    </div>
+
+    <table class="items">
+      <thead>
+        <tr>
+          <th style="width:5%;text-align:center">#</th>
+          <th style="text-align:left">Item Description</th>
+          <th style="width:10%;text-align:center">Qty</th>
+          <th style="width:16%;text-align:right">Unit Price (KES)</th>
+          <th style="width:16%;text-align:right">Total (KES)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="num">1</td><td>Television Hisense Smart 43 inch, SN.10295</td><td class="center">1 Pc</td><td class="right">70,000</td><td class="right">70,000</td></tr>
+        <tr><td class="num">2</td><td>TV Mounting Bracket</td><td class="center">1 Pc</td><td class="right">6,000</td><td class="right">6,000</td></tr>
+        <tr><td class="num">3</td><td>TV Guard</td><td class="center">1 Pc</td><td class="right">4,000</td><td class="right">4,000</td></tr>
+        <tr><td class="num">4</td><td>Extension Cables</td><td class="center">2 Pcs</td><td class="right">8,000</td><td class="right">16,000</td></tr>
+        <tr><td class="num">5</td><td>Desktop Computer i5, 8GB, 512SSD, All in One – SN.270</td><td class="center">2 Pcs</td><td class="right">270,000</td><td class="right">540,000</td></tr>
+        <tr><td class="num">6</td><td>HP Laptop i7, 16GB, 512GB, 13th Gen – SN.VNY5251KKG &amp; SN.VNY53108XP</td><td class="center">2 Pcs</td><td class="right">300,000</td><td class="right">600,000</td></tr>
+        <tr><td class="num">7</td><td>Windows 11 / Office 2022 / Antivirus / Mouse / Laptop Bags</td><td class="center">Various</td><td class="right">—</td><td class="right">—</td></tr>
+        <tr><td class="num">8</td><td>Atlas Shredder</td><td class="center">1 Pc</td><td class="right">87,000</td><td class="right">87,000</td></tr>
+      </tbody>
+    </table>
+
+    <div class="section-header">
+      <div class="sh-num">B</div>
+      <div class="sh-text">KITCHEN EQUIPMENT</div>
+    </div>
+
+    <table class="items">
+      <thead>
+        <tr>
+          <th style="width:5%;text-align:center">#</th>
+          <th style="text-align:left">Item Description</th>
+          <th style="width:10%;text-align:center">Qty</th>
+          <th style="width:16%;text-align:right">Unit Price (KES)</th>
+          <th style="width:16%;text-align:right">Total (KES)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="num">1</td><td>154L 2 Door Hisense Fridge, SN.20113</td><td class="center">1 Pc</td><td class="right">120,000</td><td class="right">120,000</td></tr>
+        <tr><td class="num">2</td><td>Fridge Guard</td><td class="center">1 Pc</td><td class="right">3,000</td><td class="right">3,000</td></tr>
+        <tr><td class="num">3</td><td>Top Load TCL Water Dispenser, SN.0196</td><td class="center">1 Pc</td><td class="right">60,000</td><td class="right">60,000</td></tr>
+        <tr><td class="num">4</td><td>Samsung Microwave, SN.OBGW07WEXA0027</td><td class="center">1 Pc</td><td class="right">50,000</td><td class="right">50,000</td></tr>
+      </tbody>
+    </table>
+
+    <div class="total-area">
+      <div class="total-box">
+        <div class="tb-grand">
+          <span class="tgl">GRAND TOTAL</span>
+          <span class="tga">KES 1,556,000</span>
+        </div>
+        <div class="tb-vat">All prices inclusive of VAT at 16%</div>
+      </div>
+    </div>
+
+    <p class="closing">We remain at your disposal for any clarification and hope to be of service.</p>
+
+    <div class="sig-row">
+      <div class="sig-col">Authorised Signature</div>
+      <div class="sig-col">Name &amp; Designation</div>
+      <div class="sig-col">Company Stamp / Date</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span class="fl">Sakamu Enterprises Ltd</span>
+    <span class="fr">Nairobi, Kenya &nbsp;·&nbsp; sakamuenterprisesltd@gmail.com</span>
+  </div>
+</div>
+</body>
+</html>

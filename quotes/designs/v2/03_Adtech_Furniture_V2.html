@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quotation – Adtech Agencies</title>
+<style>
+  * { box-sizing:border-box; margin:0; padding:0 }
+  body { font-family:'Arial',sans-serif; background:#f5eeee; padding:30px 16px }
+  @page { margin:0 }
+  @media print { body { background:white; padding:0 } }
+
+  .page { max-width:860px; margin:0 auto; background:white;
+          box-shadow:0 6px 32px rgba(0,0,0,0.13); min-height:1050px;
+          display:flex; flex-direction:column }
+
+  /* MINIMAL TOP RULE ONLY */
+  .top-rule { height:6px; background:#6B1B1B }
+  .gold-rule { height:3px; background:#D4AF37 }
+
+  /* CONTENT AREA — most of the page */
+  .body-wrap { flex:1; padding:32px 44px 0 }
+
+  /* DOCUMENT TITLE — floated top right */
+  .doc-header { display:flex; justify-content:space-between; align-items:flex-start;
+                 margin-bottom:28px }
+  .doc-title-block { text-align:right }
+  .doc-title-block .qt { font-size:36px; font-weight:900; color:#6B1B1B;
+                           letter-spacing:2px; font-style:italic; line-height:1 }
+  .doc-title-block .qt-sub { font-size:9px; color:#D4AF37; letter-spacing:2px;
+                               font-weight:700; margin-top:4px }
+  .doc-title-block .ref-date { margin-top:10px; text-align:right }
+  .doc-title-block .ref-date span { font-size:11px; color:#888;
+                                      display:block; line-height:1.8 }
+  .doc-title-block .ref-date strong { color:#6B1B1B }
+
+  /* TO SECTION — plain, document style */
+  .address-section { margin-bottom:24px }
+  .addr-row { display:flex; gap:0; margin-bottom:6px; align-items:baseline }
+  .addr-key { font-size:11px; font-weight:700; color:#6B1B1B; width:80px;
+               letter-spacing:0.5px; text-transform:uppercase }
+  .addr-val { font-size:12.5px; color:#333; font-weight:600; flex:1 }
+  .addr-val.subject { font-size:12px; color:#555; font-weight:600;
+                       border-left:3px solid #D4AF37; padding-left:10px; margin-left:0 }
+
+  .divider { border:none; border-top:1px solid #e8e8e8; margin:20px 0 }
+
+  .intro { font-size:12px; color:#555; line-height:1.7; margin-bottom:20px }
+
+  /* TABLE */
+  table.items { width:100%; border-collapse:collapse; font-size:12px }
+  table.items thead tr { background:#6B1B1B }
+  table.items thead th { color:white; padding:9px 12px; font-size:11px }
+  table.items tbody td { padding:9px 12px; border-bottom:1px solid #faf0ee; color:#333 }
+  table.items tbody tr:nth-child(even) { background:#fdf8f8 }
+  table.items .num { text-align:center; color:#D4AF37; font-weight:800 }
+  table.items .right { text-align:right }
+  table.items .center { text-align:center }
+
+  /* TOTAL — right aligned block */
+  .total-wrap { display:flex; justify-content:flex-end; margin-top:2px }
+  .total-block { min-width:340px; }
+  .total-block .gt-row { background:#6B1B1B; display:flex;
+                           justify-content:space-between; align-items:center;
+                           padding:13px 20px }
+  .total-block .gt-row .gl { font-size:11px; font-weight:700; color:white; letter-spacing:1px }
+  .total-block .gt-row .ga { font-size:20px; font-weight:900; color:#D4AF37; font-style:italic }
+  .total-block .vat { font-size:9.5px; color:#aaa; font-style:italic;
+                       text-align:right; padding:5px 0 }
+
+  /* SIGNATURE */
+  .sig-section { display:flex; gap:32px; margin-top:24px; padding-top:20px;
+                  border-top:1px solid #eee }
+  .sig-item { flex:1 }
+  .sig-line { border-bottom:1.5px solid #D4AF37; margin-bottom:6px; height:36px }
+  .sig-label { font-size:10px; color:#aaa }
+
+  /* FOOTER LETTERHEAD — at bottom */
+  .page-footer { margin-top:auto }
+  .footer-gold { height:3px; background:#D4AF37 }
+  .footer-crimson { height:6px; background:#6B1B1B }
+  .footer-content { background:#fdf8f8; padding:14px 44px;
+                     display:flex; justify-content:space-between; align-items:center }
+  .footer-logo-area { display:flex; align-items:center; gap:14px }
+  .shield-wrap svg { width:44px; height:44px }
+  .footer-company { font-size:14px; font-weight:900; color:#6B1B1B }
+  .footer-tag { font-size:8.5px; color:#aaa; letter-spacing:1.5px; margin-top:2px }
+  .footer-contact { text-align:right; font-size:10px; color:#888; line-height:1.7 }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="top-rule"></div>
+  <div class="gold-rule"></div>
+
+  <div class="body-wrap">
+    <div class="doc-header">
+      <!-- Left: empty (company is at bottom) -->
+      <div style="font-size:10px;color:#ccc;letter-spacing:1px;padding-top:6px">ADTECH AGENCIES</div>
+      <div class="doc-title-block">
+        <div class="qt">QUOTATION</div>
+        <div class="qt-sub">OFFICIAL DOCUMENT</div>
+        <div class="ref-date">
+          <span>REF: <strong>ADA/PR/2026/F-01</strong></span>
+          <span>DATE: <strong>10 April 2026</strong></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="address-section">
+      <div class="addr-row">
+        <span class="addr-key">To:</span>
+        <span class="addr-val">Ministry of Foreign Affairs Kenya</span>
+      </div>
+      <div class="addr-row">
+        <span class="addr-key">Attn:</span>
+        <span class="addr-val">French-Africa Summit, 316 Chambers</span>
+      </div>
+      <div class="addr-row" style="align-items:flex-start">
+        <span class="addr-key" style="padding-top:2px">Subject:</span>
+        <span class="addr-val subject">Supply and Delivery of Office Furniture for the French-Africa Summit, 316 Chambers</span>
+      </div>
+    </div>
+
+    <hr class="divider">
+    <p class="intro">Further to the above, we hereby submit our competitive quotation for your consideration and approval.</p>
+
+    <table class="items">
+      <thead>
+        <tr>
+          <th style="width:5%;text-align:center">#</th>
+          <th style="text-align:left">Item Description</th>
+          <th style="width:9%;text-align:center">Qty</th>
+          <th style="width:16%;text-align:right">Unit Price (KES)</th>
+          <th style="width:16%;text-align:right">Total (KES)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="num">1</td><td>4 Way Workstation</td><td class="center">1 Pc</td><td class="right">580,000</td><td class="right">580,000</td></tr>
+        <tr><td class="num">2</td><td>Executive Desk</td><td class="center">2 Pcs</td><td class="right">195,000</td><td class="right">390,000</td></tr>
+        <tr><td class="num">3</td><td>Executive Cabinet</td><td class="center">1 Pc</td><td class="right">195,000</td><td class="right">195,000</td></tr>
+        <tr><td class="num">4</td><td>High Back Orthopaedic Chair</td><td class="center">3 Pcs</td><td class="right">98,000</td><td class="right">294,000</td></tr>
+        <tr><td class="num">5</td><td>Executive Chairs</td><td class="center">2 Pcs</td><td class="right">95,000</td><td class="right">190,000</td></tr>
+        <tr><td class="num">6</td><td>4 Drawer Cabinet</td><td class="center">1 Pc</td><td class="right">100,000</td><td class="right">100,000</td></tr>
+        <tr><td class="num">7</td><td>3 Seater Visitor Chair</td><td class="center">1 Pc</td><td class="right">115,000</td><td class="right">115,000</td></tr>
+        <tr><td class="num">8</td><td>Coffee Lounge</td><td class="center">2 Pcs</td><td class="right">88,000</td><td class="right">176,000</td></tr>
+        <tr><td class="num">9</td><td>Leather Visitor Chairs</td><td class="center">2 Pcs</td><td class="right">58,000</td><td class="right">116,000</td></tr>
+        <tr><td class="num">10</td><td>Mahogany Executive Coat Hanger</td><td class="center">2 Pcs</td><td class="right">20,000</td><td class="right">40,000</td></tr>
+        <tr><td class="num">11</td><td>In/Out Tray</td><td class="center">2 Pcs</td><td class="right">14,000</td><td class="right">28,000</td></tr>
+      </tbody>
+    </table>
+
+    <div class="total-wrap">
+      <div class="total-block">
+        <div class="gt-row">
+          <span class="gl">GRAND TOTAL</span>
+          <span class="ga">KES 2,224,000</span>
+        </div>
+        <div class="vat">All prices are inclusive of VAT at 16%</div>
+      </div>
+    </div>
+
+    <div class="sig-section">
+      <div class="sig-item">
+        <div class="sig-line"></div>
+        <div class="sig-label">Authorised Signature</div>
+      </div>
+      <div class="sig-item">
+        <div class="sig-line"></div>
+        <div class="sig-label">Name &amp; Designation</div>
+      </div>
+      <div class="sig-item">
+        <div class="sig-line"></div>
+        <div class="sig-label">Official Stamp &amp; Date</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER LETTERHEAD -->
+  <div class="page-footer">
+    <div class="footer-content">
+      <div class="footer-logo-area">
+        <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="22,2 42,14 42,30 22,42 2,30 2,14" fill="none" stroke="#6B1B1B" stroke-width="2"/>
+          <polygon points="22,8 36,16 36,28 22,36 8,28 8,16" fill="rgba(107,27,27,0.08)"/>
+          <text x="22" y="24" text-anchor="middle" font-family="Arial" font-weight="900" font-size="11" fill="#6B1B1B">ADT</text>
+        </svg>
+        <div>
+          <div class="footer-company">Adtech Agencies</div>
+          <div class="footer-tag">SUPPLY &nbsp;·&nbsp; PROCUREMENT &nbsp;·&nbsp; NAIROBI, KENYA</div>
+        </div>
+      </div>
+      <div class="footer-contact">Nairobi, Kenya</div>
+    </div>
+    <div class="footer-gold"></div>
+    <div class="footer-crimson"></div>
+  </div>
+
+</div>
+</body>
+</html>

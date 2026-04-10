@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quotation – Hayward Agencies Ltd</title>
+<style>
+  * { box-sizing:border-box; margin:0; padding:0 }
+  body { font-family:'Arial',sans-serif; background:#edf1f7; padding:30px 16px }
+  @page { margin:0 }
+  @media print { body { background:white; padding:0 } }
+
+  /* DASHBOARD / KPI STYLE */
+  .page { max-width:860px; margin:0 auto; background:#f4f7fb;
+          box-shadow:0 6px 32px rgba(0,0,0,0.13); overflow:hidden }
+
+  /* HEADER STRIP */
+  .header { background:#0D3B6E; padding:20px 32px }
+  .header-row { display:flex; align-items:center; justify-content:space-between }
+  .company { display:flex; align-items:center; gap:16px }
+  .company h1 { font-size:20px; font-weight:900; color:white }
+  .company p { font-size:9px; color:rgba(232,64,42,0.85); letter-spacing:2px; margin-top:3px }
+  .company p2 { font-size:9px; color:rgba(255,255,255,0.4); display:block; margin-top:2px }
+
+  .qt-strip { text-align:right }
+  .qt-strip .qt { font-size:22px; font-weight:900; color:white; letter-spacing:1px }
+  .qt-strip .qtsub { font-size:9px; color:rgba(255,255,255,0.45); margin-top:2px }
+
+  /* KPI DASHBOARD BOXES */
+  .kpi-row { display:flex; gap:2px; background:#e8edf5; padding:2px }
+  .kpi-box { flex:1; background:white; padding:12px 16px; text-align:center }
+  .kpi-box.highlight { background:#0D3B6E }
+  .kpi-box.red { background:#E8402A }
+  .kb-label { font-size:8px; color:#888; letter-spacing:1.5px; text-transform:uppercase; margin-bottom:4px }
+  .kpi-box.highlight .kb-label { color:rgba(255,255,255,0.55) }
+  .kpi-box.red .kb-label { color:rgba(255,255,255,0.7) }
+  .kb-value { font-size:13px; font-weight:800; color:#0D3B6E }
+  .kpi-box.highlight .kb-value { color:white; font-size:11px }
+  .kpi-box.red .kb-value { color:white; font-size:11px }
+
+  /* SUBJECT */
+  .subject-area { background:white; margin:12px 12px 0; padding:12px 16px;
+                   border-left:4px solid #E8402A }
+  .subject-area .sl { font-size:8px; color:#E8402A; font-weight:700;
+                       letter-spacing:1.5px; margin-bottom:3px }
+  .subject-area .sv { font-size:11.5px; font-weight:700; color:#0D3B6E }
+
+  .intro { font-size:12px; color:#555; line-height:1.7; padding:12px 12px 8px; }
+
+  /* SECTION */
+  .section-bar { background:#0D3B6E; padding:7px 12px; margin:10px 0 0;
+                  display:flex; align-items:center; gap:10px }
+  .sb-letter { background:#E8402A; color:white; width:22px; height:22px;
+                display:flex; align-items:center; justify-content:center;
+                font-weight:900; font-size:13px; border-radius:2px; flex-shrink:0 }
+  .sb-text { font-size:11px; font-weight:700; color:white; letter-spacing:0.5px }
+
+  table.items { width:100%; border-collapse:collapse; font-size:11.5px; background:white }
+  table.items thead tr { background:#0D3B6E }
+  table.items thead th { color:white; padding:8px 10px; font-size:11px }
+  table.items tbody td { padding:8px 10px; border-bottom:1px solid #e8edf5; color:#333 }
+  table.items tbody tr:nth-child(even) { background:#f0f4fa }
+  table.items .num { text-align:center; color:#E8402A; font-weight:800 }
+  table.items .right { text-align:right }
+  table.items .center { text-align:center }
+
+  /* TOTAL */
+  .total-wrap { padding:12px; display:flex; justify-content:flex-end }
+  .grand-box { background:#0D3B6E; padding:14px 24px; min-width:300px;
+                display:flex; justify-content:space-between; align-items:center }
+  .grand-box .gl { font-size:10.5px; font-weight:700; color:white; letter-spacing:1.5px }
+  .grand-box .ga { font-size:19px; font-weight:900; color:#E8402A }
+
+  .vat-note { font-size:10px; color:#aaa; font-style:italic; text-align:right; padding:4px 12px 0 }
+
+  .closing { font-size:12px; color:#555; line-height:1.7; padding:12px 12px 0 }
+
+  .sig-row { display:flex; gap:12px; padding:16px 12px 16px; }
+  .sig-col { flex:1; background:white; padding:10px 14px; border-top:2px solid #E8402A;
+              font-size:10px; color:#aaa }
+
+  .footer { display:flex }
+  .pf-navy { background:#0D3B6E; padding:8px 20px; font-size:11px;
+              font-weight:700; color:white; flex:0.4 }
+  .pf-red { background:#E8402A; padding:8px 16px; font-size:10px;
+             color:rgba(255,255,255,0.8); flex:0.6; font-weight:600 }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="header-row">
+      <div class="company">
+        <svg width="58" height="58" viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
+          <rect x="3" y="3" width="62" height="62" rx="10" fill="none" stroke="#E8402A" stroke-width="2.5"/>
+          <rect x="9" y="9" width="50" height="50" rx="7" fill="rgba(232,64,42,0.12)"/>
+          <rect x="16" y="20" width="7" height="28" rx="2" fill="#E8402A"/>
+          <rect x="30.5" y="28" width="7" height="12" rx="2" fill="#E8402A"/>
+          <rect x="45" y="20" width="7" height="28" rx="2" fill="#E8402A"/>
+          <rect x="16" y="30" width="36" height="7" rx="2" fill="white" opacity="0.9"/>
+        </svg>
+        <div>
+          <h1>Hayward Agencies Ltd</h1>
+          <p>EQUIPMENT &nbsp;·&nbsp; SUPPLY &nbsp;·&nbsp; DELIVERY</p>
+          <p2>Nairobi, Kenya &nbsp;·&nbsp; haywardagencieskenya@gmail.com</p2>
+        </div>
+      </div>
+      <div class="qt-strip">
+        <div class="qt">QUOTATION</div>
+        <div class="qtsub">OFFICIAL DOCUMENT</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="kpi-row">
+    <div class="kpi-box">
+      <div class="kb-label">Reference</div>
+      <div class="kb-value">HAL/QT/APR2026/08</div>
+    </div>
+    <div class="kpi-box">
+      <div class="kb-label">Date Issued</div>
+      <div class="kb-value">10 April 2026</div>
+    </div>
+    <div class="kpi-box highlight">
+      <div class="kb-label">VAT Status</div>
+      <div class="kb-value">Inclusive @ 16%</div>
+    </div>
+    <div class="kpi-box red">
+      <div class="kb-label">Grand Total</div>
+      <div class="kb-value">KES 1,780,500</div>
+    </div>
+  </div>
+
+  <div class="subject-area">
+    <div class="sl">SUBJECT</div>
+    <div class="sv">Supply and Delivery of Office Equipment and Kitchen Equipment for the French-Africa Summit, 316 Chambers</div>
+  </div>
+  <div style="background:white;margin:0 12px;padding:8px 16px;font-size:12px;color:#555">
+    <strong style="color:#0D3B6E">To:</strong> Ministry of Foreign Affairs Kenya &nbsp;&nbsp;
+    <strong style="color:#0D3B6E">Attn:</strong> French-Africa Summit, 316 Chambers
+  </div>
+
+  <p class="intro">In reference to the above, we hereby present our formal price quotation for the supply and delivery as follows.</p>
+
+  <div class="section-bar">
+    <div class="sb-letter">A</div>
+    <div class="sb-text">OFFICE EQUIPMENT</div>
+  </div>
+  <table class="items">
+    <thead>
+      <tr>
+        <th style="width:5%;text-align:center">#</th>
+        <th style="text-align:left">Item Description</th>
+        <th style="width:10%;text-align:center">Qty</th>
+        <th style="width:16%;text-align:right">Unit Price (KES)</th>
+        <th style="width:16%;text-align:right">Total (KES)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="num">1</td><td>HP Laptop i7, 16GB, 512GB, 13th Gen – SN.VNY5251KKG &amp; SN.VNY53108XP</td><td class="center">2 Pcs</td><td class="right">340,000</td><td class="right">680,000</td></tr>
+      <tr><td class="num">2</td><td>Desktop Computer i5, 8GB, 512SSD, All in One – SN.270</td><td class="center">2 Pcs</td><td class="right">305,000</td><td class="right">610,000</td></tr>
+      <tr><td class="num">3</td><td>Television Hisense Smart 43 inch, SN.10295</td><td class="center">1 Pc</td><td class="right">82,000</td><td class="right">82,000</td></tr>
+      <tr><td class="num">4</td><td>Atlas Shredder</td><td class="center">1 Pc</td><td class="right">99,000</td><td class="right">99,000</td></tr>
+      <tr><td class="num">5</td><td>Extension Cables</td><td class="center">2 Pcs</td><td class="right">10,000</td><td class="right">20,000</td></tr>
+      <tr><td class="num">6</td><td>TV Mounting Bracket</td><td class="center">1 Pc</td><td class="right">7,500</td><td class="right">7,500</td></tr>
+      <tr><td class="num">7</td><td>TV Guard</td><td class="center">1 Pc</td><td class="right">5,500</td><td class="right">5,500</td></tr>
+      <tr><td class="num">8</td><td>Windows 11 / Office 2022 / Antivirus / Mouse / Laptop Bags</td><td class="center">Various</td><td class="right">—</td><td class="right">—</td></tr>
+    </tbody>
+  </table>
+
+  <div class="section-bar">
+    <div class="sb-letter">B</div>
+    <div class="sb-text">KITCHEN EQUIPMENT</div>
+  </div>
+  <table class="items">
+    <thead>
+      <tr>
+        <th style="width:5%;text-align:center">#</th>
+        <th style="text-align:left">Item Description</th>
+        <th style="width:10%;text-align:center">Qty</th>
+        <th style="width:16%;text-align:right">Unit Price (KES)</th>
+        <th style="width:16%;text-align:right">Total (KES)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="num">1</td><td>Samsung Microwave, SN.OBGW07WEXA0027</td><td class="center">1 Pc</td><td class="right">62,000</td><td class="right">62,000</td></tr>
+      <tr><td class="num">2</td><td>154L 2 Door Hisense Fridge, SN.20113</td><td class="center">1 Pc</td><td class="right">138,000</td><td class="right">138,000</td></tr>
+      <tr><td class="num">3</td><td>Fridge Guard</td><td class="center">1 Pc</td><td class="right">4,500</td><td class="right">4,500</td></tr>
+      <tr><td class="num">4</td><td>Top Load TCL Water Dispenser, SN.0196</td><td class="center">1 Pc</td><td class="right">72,000</td><td class="right">72,000</td></tr>
+    </tbody>
+  </table>
+
+  <div class="vat-note">All prices inclusive of VAT at 16%</div>
+  <div class="total-wrap">
+    <div class="grand-box">
+      <span class="gl">GRAND TOTAL</span>
+      <span class="ga">KES 1,780,500</span>
+    </div>
+  </div>
+
+  <p class="closing">Thank you for this opportunity and we look forward to a successful partnership.</p>
+
+  <div class="sig-row">
+    <div class="sig-col">Signature</div>
+    <div class="sig-col">Name &amp; Title</div>
+    <div class="sig-col">Official Stamp</div>
+  </div>
+
+  <div class="footer">
+    <div class="pf-navy">Hayward Agencies Ltd</div>
+    <div class="pf-red">Nairobi, Kenya &nbsp;·&nbsp; haywardagencieskenya@gmail.com</div>
+  </div>
+
+</div>
+</body>
+</html>

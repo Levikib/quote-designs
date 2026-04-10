@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quotation – Wespan Agencies Ltd</title>
+<style>
+  * { box-sizing:border-box; margin:0; padding:0 }
+  body { font-family:'Arial',sans-serif; background:#e5f0f0; padding:30px 16px }
+  @page { margin:0 }
+  @media print { body { background:white; padding:0 } }
+
+  .page { max-width:860px; margin:0 auto; background:white;
+          box-shadow:0 6px 32px rgba(0,0,0,0.13); overflow:hidden }
+
+  /* CENTERED HEADER */
+  .header { text-align:center; padding:32px 40px 20px; border-bottom:1px solid #e0f0f0;
+             position:relative }
+  .header::before { content:''; position:absolute; top:0; left:0; right:0; height:5px;
+                    background:linear-gradient(90deg,#0D5C5C,#F0C040,#0D5C5C) }
+  .logo-compass { margin:0 auto 12px }
+  .company-name { font-size:26px; font-weight:900; color:#0D5C5C; letter-spacing:0.5px }
+  .company-tag { font-size:9px; color:#aaa; letter-spacing:2.5px; margin-top:5px }
+  .company-contact { font-size:10px; color:#aaa; margin-top:4px }
+
+  /* HORIZONTAL RULE WITH DIAMOND */
+  .hr-diamond { display:flex; align-items:center; gap:0; margin:0 40px }
+  .hr-line { flex:1; height:1px; background:#e0f0f0 }
+  .hr-diamond-icon { width:10px; height:10px; background:#F0C040;
+                      transform:rotate(45deg); margin:0 12px; flex-shrink:0 }
+
+  /* TWO FLOATING CARDS — info */
+  .info-cards { display:flex; gap:20px; padding:20px 40px }
+  .info-card { flex:1; border:1px solid #e0f0f0; border-top:3px solid #0D5C5C;
+                padding:14px 18px; border-radius:2px }
+  .info-card.accent { border-top-color:#F0C040 }
+  .ic-title { font-size:8px; color:#0D5C5C; font-weight:700; letter-spacing:2px;
+               text-transform:uppercase; margin-bottom:8px }
+  .ic-row { display:flex; justify-content:space-between; margin-bottom:5px }
+  .ic-row .ick { font-size:10px; color:#888 }
+  .ic-row .icv { font-size:10.5px; font-weight:700; color:#0D5C5C }
+  .ic-body { font-size:11.5px; font-weight:700; color:#0D5C5C; line-height:1.5 }
+  .ic-sub { font-size:10.5px; color:#555; margin-top:4px }
+
+  /* SUBJECT BAND */
+  .subject-band { margin:0 40px; background:#0D5C5C; padding:10px 18px;
+                   border-radius:2px; margin-bottom:18px }
+  .subject-band .sl { font-size:8px; color:#F0C040; font-weight:700; letter-spacing:2px }
+  .subject-band .sv { font-size:11.5px; color:white; font-weight:600; margin-top:3px }
+
+  .intro { padding:0 40px 14px; font-size:12px; color:#555; line-height:1.7 }
+
+  /* TABLE */
+  table.items { width:100%; border-collapse:collapse; font-size:12px }
+  table.items thead tr { background:#0D5C5C }
+  table.items thead th { color:white; padding:9px 14px; font-size:11px }
+  table.items tbody td { padding:9px 14px; border-bottom:1px solid #e5f5f5; color:#333 }
+  table.items tbody tr:nth-child(even) { background:#f0fafa }
+  table.items .num { text-align:center; color:#0D5C5C; font-weight:800 }
+  table.items .right { text-align:right }
+  table.items .center { text-align:center }
+
+  /* TOTAL */
+  .total-section { padding:14px 40px 0; display:flex; justify-content:space-between;
+                    align-items:center }
+  .vat-note { font-size:10px; color:#aaa; font-style:italic }
+  .gt-pill { background:#0D5C5C; color:white; padding:12px 28px;
+              display:flex; gap:24px; align-items:center; border-radius:30px }
+  .gt-pill .gl { font-size:10.5px; font-weight:700; letter-spacing:1px }
+  .gt-pill .ga { font-size:18px; font-weight:900; color:#F0C040 }
+
+  .closing { padding:16px 40px; font-size:12px; color:#555; line-height:1.7 }
+
+  .sig-row { display:flex; gap:24px; padding:0 40px 28px }
+  .sig-col { flex:1; border-top:2px solid #F0C040; padding-top:7px;
+              font-size:10px; color:#aaa }
+
+  /* FOOTER */
+  .page-footer { background:#0D5C5C; padding:10px 40px;
+                  display:flex; justify-content:space-between; align-items:center }
+  .page-footer .fl { font-size:11px; font-weight:700; color:#F0C040 }
+  .page-footer .fr { font-size:10px; color:rgba(255,255,255,0.5) }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <svg class="logo-compass" width="70" height="70" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="35" cy="35" r="32" fill="none" stroke="#0D5C5C" stroke-width="2"/>
+      <circle cx="35" cy="35" r="26" fill="none" stroke="#F0C040" stroke-width="1" stroke-dasharray="3 3"/>
+      <line x1="35" y1="10" x2="35" y2="60" stroke="#0D5C5C" stroke-width="1" opacity="0.3"/>
+      <line x1="10" y1="35" x2="60" y2="35" stroke="#0D5C5C" stroke-width="1" opacity="0.3"/>
+      <polygon points="35,14 38,30 35,28 32,30" fill="#F0C040"/>
+      <polygon points="35,56 38,40 35,42 32,40" fill="#0D5C5C" opacity="0.4"/>
+      <text x="35" y="39" text-anchor="middle" font-family="Arial" font-weight="900" font-size="11" fill="#0D5C5C">WAL</text>
+    </svg>
+    <div class="company-name">Wespan Agencies Ltd</div>
+    <div class="company-tag">SUPPLY &nbsp;·&nbsp; FITTINGS &nbsp;·&nbsp; PROCUREMENT</div>
+    <div class="company-contact">P.O. Box 3244 – 00100, Nairobi, Kenya</div>
+  </div>
+
+  <div class="hr-diamond" style="margin-top:0">
+    <div class="hr-line"></div>
+    <div class="hr-diamond-icon"></div>
+    <div class="hr-line"></div>
+  </div>
+
+  <div class="info-cards">
+    <div class="info-card">
+      <div class="ic-title">Addressed To</div>
+      <div class="ic-body">Ministry of Foreign Affairs Kenya</div>
+      <div class="ic-sub">French-Africa Summit, 316 Chambers</div>
+    </div>
+    <div class="info-card accent">
+      <div class="ic-title">Document Details</div>
+      <div class="ic-row"><span class="ick">REF:</span><span class="icv">WAL/2026/Q-015</span></div>
+      <div class="ic-row"><span class="ick">DATE:</span><span class="icv">8 April 2026</span></div>
+      <div class="ic-row"><span class="ick">VAT:</span><span class="icv">Inclusive @ 16%</span></div>
+    </div>
+  </div>
+
+  <div class="subject-band">
+    <div class="sl">SUBJECT</div>
+    <div class="sv">Supply and Delivery of Office Fittings for the French-Africa Summit, 316 Chambers</div>
+  </div>
+
+  <p class="intro">We humbly submit our quotation for the above-referenced supply and request your favourable consideration.</p>
+
+  <table class="items">
+    <thead>
+      <tr>
+        <th style="width:5%;text-align:center">#</th>
+        <th style="text-align:left">Item Description</th>
+        <th style="width:9%;text-align:center">Qty</th>
+        <th style="width:16%;text-align:right">Unit Price (KES)</th>
+        <th style="width:16%;text-align:right">Total (KES)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="num">1</td><td>Supply &amp; Fix Wooden Floor Tiles</td><td class="center">1 Lot</td><td class="right">380,000</td><td class="right">380,000</td></tr>
+      <tr><td class="num">2</td><td>Supply &amp; Fix Aluminium Curtain Rails with Curtains</td><td class="center">1 Lot</td><td class="right">300,000</td><td class="right">300,000</td></tr>
+      <tr><td class="num">3</td><td>Supply &amp; Fix Venetian Blinds</td><td class="center">1 Lot</td><td class="right">240,000</td><td class="right">240,000</td></tr>
+      <tr><td class="num">4</td><td>Supply &amp; Fix Wall-to-Wall Carpet</td><td class="center">1 Lot</td><td class="right">330,000</td><td class="right">330,000</td></tr>
+      <tr><td class="num">5</td><td>Supply &amp; Fix Wallpaper</td><td class="center">1 Lot</td><td class="right">210,000</td><td class="right">210,000</td></tr>
+      <tr><td class="num">6</td><td>Supply &amp; Fix Ceiling Boards</td><td class="center">1 Lot</td><td class="right">280,000</td><td class="right">280,000</td></tr>
+      <tr><td class="num">7</td><td>Supply &amp; Fix Partition Walls</td><td class="center">1 Lot</td><td class="right">450,000</td><td class="right">450,000</td></tr>
+      <tr><td class="num">8</td><td>Supply &amp; Fix Door Frames &amp; Doors</td><td class="center">1 Lot</td><td class="right">200,000</td><td class="right">200,000</td></tr>
+      <tr><td class="num">9</td><td>Painting Works – Interior</td><td class="center">1 Lot</td><td class="right">210,000</td><td class="right">210,000</td></tr>
+      <tr><td class="num">10</td><td>Electrical Fittings &amp; Wiring</td><td class="center">1 Lot</td><td class="right">150,000</td><td class="right">150,000</td></tr>
+    </tbody>
+  </table>
+
+  <div class="total-section">
+    <div class="vat-note">All prices inclusive of VAT at 16%</div>
+    <div class="gt-pill">
+      <span class="gl">GRAND TOTAL</span>
+      <span class="ga">KES 2,750,000</span>
+    </div>
+  </div>
+
+  <p class="closing">We remain available for any further clarification and hope to be awarded the opportunity to serve.</p>
+
+  <div class="sig-row">
+    <div class="sig-col">Authorised Signature</div>
+    <div class="sig-col">Name &amp; Designation</div>
+    <div class="sig-col">Company Stamp / Date</div>
+  </div>
+
+  <div class="page-footer">
+    <span class="fl">Wespan Agencies Ltd</span>
+    <span class="fr">P.O. Box 3244 – 00100, Nairobi, Kenya</span>
+  </div>
+
+</div>
+</body>
+</html>
