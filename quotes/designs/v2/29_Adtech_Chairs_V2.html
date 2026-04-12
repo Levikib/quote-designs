@@ -60,11 +60,12 @@
   .total-block .vat { font-size:9.5px; color:#aaa; font-style:italic;
                        text-align:right; padding:5px 0 }
 
-  .sig-section { display:flex; gap:32px; margin-top:24px; padding-top:20px;
-                  border-top:1px solid #eee }
-  .sig-item { flex:1 }
-  .sig-line { border-bottom:1.5px solid #D4AF37; margin-bottom:6px; height:36px }
-  .sig-label { font-size:10px; color:#aaa }
+  .sig-section { margin-top:24px; padding-top:20px; border-top:1px solid #eee; text-align:center }
+  .sig-banner { display:inline-block; background:#6B1B1B; color:#D4AF37;
+                 font-size:8px; font-weight:700; letter-spacing:3px;
+                 padding:4px 24px; margin-bottom:14px }
+  .sig-wide-line { border-top:1.5px solid #D4AF37; margin:0 auto 8px; max-width:480px; height:36px }
+  .sig-three { display:flex; justify-content:center; gap:60px; font-size:9.5px; color:#aaa }
 
   .page-footer { margin-top:auto }
   .footer-gold { height:3px; background:#D4AF37 }
@@ -140,9 +141,13 @@
     </div>
 
     <div class="sig-section">
-      <div class="sig-item"><div class="sig-line"></div><div class="sig-label">Authorised Signature</div></div>
-      <div class="sig-item"><div class="sig-line"></div><div class="sig-label">Name &amp; Designation</div></div>
-      <div class="sig-item"><div class="sig-line"></div><div class="sig-label">Official Stamp &amp; Date</div></div>
+      <div class="sig-banner">AUTHORISED SIGNATORY</div>
+      <div class="sig-wide-line"></div>
+      <div class="sig-three">
+        <span>Signature</span>
+        <span>Name &amp; Designation</span>
+        <span>Official Stamp &amp; Date</span>
+      </div>
     </div>
   </div>
 

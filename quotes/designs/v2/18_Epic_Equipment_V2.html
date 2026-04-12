@@ -80,9 +80,12 @@
 
   .closing { font-size:12px; color:#555; line-height:1.7; padding:10px 24px 4px }
 
-  .sig-row { display:flex; gap:20px; padding:18px 24px 22px }
-  .sig-col { flex:1; border-top:2px solid #F4A61D; padding-top:6px;
-              font-size:10px; color:#aaa }
+  .sig-row { display:flex; gap:16px; padding:18px 24px 22px }
+  .sig-col { flex:1; border:1.5px solid #e0ede5 }
+  .sig-col .sig-strip { background:#1A5C3A; height:6px }
+  .sig-col .sig-body { padding:28px 14px 10px; font-size:10px; color:#aaa }
+  .sig-col .sig-lbl { font-size:8px; font-weight:700; color:#1A5C3A;
+                       letter-spacing:1.5px; text-transform:uppercase; margin-top:4px }
 
   .footer { background:#1A5C3A; padding:9px; text-align:center;
              font-size:10.5px; color:rgba(255,255,255,0.55); font-weight:600 }
@@ -182,8 +185,9 @@
   <p class="closing">We remain at your disposal for any clarification and hope to be of service.</p>
 
   <div class="sig-row">
-    <div class="sig-col">Authorised Signature &amp; Stamp</div>
-    <div class="sig-col">Name, Designation &amp; Date</div>
+    <div class="sig-col"><div class="sig-strip"></div><div class="sig-body">&nbsp;<div class="sig-lbl">Authorised Signature &amp; Stamp</div></div></div>
+    <div class="sig-col"><div class="sig-strip"></div><div class="sig-body">&nbsp;<div class="sig-lbl">Name &amp; Designation</div></div></div>
+    <div class="sig-col"><div class="sig-strip"></div><div class="sig-body">&nbsp;<div class="sig-lbl">Official Stamp &amp; Date</div></div></div>
   </div>
 
   <div class="footer">Epic Capital Ltd &nbsp;·&nbsp; Nairobi, Kenya</div>

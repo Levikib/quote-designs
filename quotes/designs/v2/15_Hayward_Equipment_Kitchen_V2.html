@@ -75,9 +75,13 @@
 
   .closing { font-size:12px; color:#555; line-height:1.7; padding:12px 12px 0 }
 
-  .sig-row { display:flex; gap:12px; padding:16px 12px 16px; }
-  .sig-col { flex:1; background:white; padding:10px 14px; border-top:2px solid #E8402A;
-              font-size:10px; color:#aaa }
+  .sig-split { display:flex; gap:32px; margin:16px 12px 16px; align-items:flex-end }
+  .sig-behalf { flex:1; font-size:11px; color:#555; line-height:1.8 }
+  .sig-behalf strong { color:#0D3B6E; font-size:12px }
+  .sig-box { flex:1; border:1.5px solid #E8402A; padding:10px 16px }
+  .sig-box-top { display:flex; justify-content:space-between; font-size:8px;
+                  font-weight:700; color:#E8402A; letter-spacing:1.5px; margin-bottom:24px }
+  .sig-box-line { border-top:1px solid #E8402A; font-size:9px; color:#aaa; padding-top:4px }
 
   .footer { display:flex }
   .pf-navy { background:#0D3B6E; padding:8px 20px; font-size:11px;
@@ -201,10 +205,12 @@
 
   <p class="closing">Thank you for this opportunity and we look forward to a successful partnership.</p>
 
-  <div class="sig-row">
-    <div class="sig-col">Signature</div>
-    <div class="sig-col">Name &amp; Title</div>
-    <div class="sig-col">Official Stamp</div>
+  <div class="sig-split">
+    <div class="sig-behalf">For and on behalf of<br><strong>Hayward Agencies Ltd</strong><br><span style="font-size:10px;color:#aaa">Authorised Representative</span></div>
+    <div class="sig-box">
+      <div class="sig-box-top"><span>SIGNATURE &amp; STAMP</span><span>DATE</span></div>
+      <div class="sig-box-line">Name &amp; Designation</div>
+    </div>
   </div>
 
   <div class="footer">

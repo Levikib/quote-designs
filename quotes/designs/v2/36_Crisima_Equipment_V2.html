@@ -69,9 +69,13 @@
 
   .closing { padding:16px 36px; font-size:12px; color:#555; line-height:1.7 }
 
-  .sig-row { display:flex; gap:24px; padding:0 36px 28px }
-  .sig-col { flex:1; border-top:2px solid #1AB8E8; padding-top:7px;
-              font-size:10px; color:#aaa }
+  .sig-cards { display:flex; gap:20px; padding:0 36px 28px }
+  .sig-card { flex:1; border:1.5px solid #1AB8E8; position:relative; padding:22px 14px 10px }
+  .sig-card-tag { position:absolute; top:-1px; left:12px;
+                   background:#1AB8E8; color:#4A1A60; font-size:8px;
+                   font-weight:700; letter-spacing:1.5px; padding:2px 8px }
+  .sig-card-line { border-top:1px solid #1AB8E8; margin-top:18px; padding-top:5px;
+                    font-size:9px; color:#aaa }
 
   .page-footer { background:#4A1A60; padding:8px 36px;
                   display:flex; justify-content:space-between }
@@ -158,10 +162,10 @@
 
   <p class="closing">We trust you will find our offer satisfactory and look forward to your favourable consideration.</p>
 
-  <div class="sig-row">
-    <div class="sig-col">Authorised Signature</div>
-    <div class="sig-col">Name &amp; Designation</div>
-    <div class="sig-col">Company Stamp / Date</div>
+  <div class="sig-cards">
+    <div class="sig-card"><div class="sig-card-tag">SIGNATURE</div><div class="sig-card-line">Authorised Signature &amp; Stamp</div></div>
+    <div class="sig-card"><div class="sig-card-tag">NAME</div><div class="sig-card-line">Name &amp; Designation</div></div>
+    <div class="sig-card"><div class="sig-card-tag">DATE</div><div class="sig-card-line">Date</div></div>
   </div>
 
   <div class="page-footer">

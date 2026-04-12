@@ -62,9 +62,14 @@
 
   .closing { padding:14px 32px 6px; font-size:12px; color:#555; line-height:1.7 }
 
-  .sig-row { display:flex; gap:24px; padding:16px 32px 24px }
-  .sig-col { flex:1; border-top:2px solid #E85C35; padding-top:6px;
-              font-size:10px; color:#aaa }
+  .sig-split { display:flex; margin:16px 0 0; overflow:hidden }
+  .sig-teal { flex:1; background:#0A5C6E; padding:16px 20px 14px }
+  .sig-coral { flex:1; background:#E85C35; padding:16px 20px 14px }
+  .sig-half-lbl { font-size:8px; font-weight:700; letter-spacing:2px; margin-bottom:22px }
+  .sig-teal .sig-half-lbl { color:rgba(255,255,255,0.7) }
+  .sig-coral .sig-half-lbl { color:rgba(255,255,255,0.8) }
+  .sig-half-line { border-top:1px solid rgba(255,255,255,0.4); padding-top:5px;
+                    font-size:9px; color:rgba(255,255,255,0.6) }
 
   .footer { display:flex }
   .ft-teal { background:#0A5C6E; padding:9px 32px; font-size:11px;
@@ -154,10 +159,15 @@
 
   <p class="closing">We remain at your disposal for any clarification and hope to be of service.</p>
 
-  <div class="sig-row">
-    <div class="sig-col">Authorised Signature</div>
-    <div class="sig-col">Name &amp; Designation</div>
-    <div class="sig-col">Company Stamp / Date</div>
+  <div class="sig-split">
+    <div class="sig-teal">
+      <div class="sig-half-lbl">AUTHORISED SIGNATURE</div>
+      <div class="sig-half-line">Signature &amp; Stamp</div>
+    </div>
+    <div class="sig-coral">
+      <div class="sig-half-lbl">NAME &amp; DATE</div>
+      <div class="sig-half-line">Name, Designation &amp; Date</div>
+    </div>
   </div>
 
   <div class="footer">

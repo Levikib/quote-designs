@@ -78,9 +78,13 @@
 
   .closing { padding:14px 28px 4px; font-size:12px; color:#555; line-height:1.7 }
 
-  .sig-row { display:flex; gap:24px; padding:16px 28px 24px }
-  .sig-col { flex:1; border-top:2px solid #D4A820; padding-top:6px;
-              font-size:10px; color:#aaa }
+  .sig-cascade { padding:16px 28px 24px; display:flex; flex-direction:column; gap:10px }
+  .sig-c-field { min-width:240px }
+  .sig-c-field:nth-child(2) { margin-left:40px }
+  .sig-c-field:nth-child(3) { margin-left:80px }
+  .sig-c-lbl { font-size:8px; font-weight:700; color:#6B1040; letter-spacing:2px;
+                text-transform:uppercase; margin-bottom:5px }
+  .sig-c-line { border-top:2px solid #D4A820; padding-top:4px; font-size:9px; color:#aaa }
 
   /* FOOTER */
   .footer { background:#6B1040; padding:9px 28px;
@@ -171,10 +175,10 @@
 
   <p class="closing">We remain at your disposal for any clarification and hope to be of service.</p>
 
-  <div class="sig-row">
-    <div class="sig-col">Authorised Signature</div>
-    <div class="sig-col">Name &amp; Designation</div>
-    <div class="sig-col">Company Stamp / Date</div>
+  <div class="sig-cascade">
+    <div class="sig-c-field"><div class="sig-c-lbl">Authorised Signature</div><div class="sig-c-line"></div></div>
+    <div class="sig-c-field"><div class="sig-c-lbl">Name &amp; Designation</div><div class="sig-c-line"></div></div>
+    <div class="sig-c-field"><div class="sig-c-lbl">Company Stamp / Date</div><div class="sig-c-line"></div></div>
   </div>
 
   <div class="footer">

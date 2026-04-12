@@ -65,9 +65,12 @@
 
   .closing { padding:12px 48px 0; font-size:12px; color:#666; line-height:1.7 }
 
-  .sig-zone { padding:20px 48px 28px; display:flex; gap:24px }
-  .sig-line { flex:1; border-top:1px solid #A8A8C0; padding-top:6px;
-               font-size:9px; color:#bbb; letter-spacing:0.5px }
+  .sig-zone { padding:20px 48px 28px }
+  .sig-lbl { font-size:8px; font-weight:700; color:#1C1C3A; letter-spacing:3px;
+              text-transform:uppercase; margin-bottom:32px }
+  .sig-line { border-top:2px solid #1C1C3A; padding-top:6px; font-size:9px;
+               color:#bbb; display:flex; justify-content:space-between }
+  .sig-line span { letter-spacing:0.5px }
 
   .foot-id { padding:12px 48px; border-top:1px solid #e0e0e8;
               display:flex; justify-content:space-between; align-items:center }
@@ -154,9 +157,12 @@
   <p class="closing">We remain at your disposal for any clarification and hope to be of service.</p>
 
   <div class="sig-zone">
-    <div class="sig-line">Authorised Signature</div>
-    <div class="sig-line">Name &amp; Designation</div>
-    <div class="sig-line">Company Stamp / Date</div>
+    <div class="sig-lbl">Authorisation</div>
+    <div class="sig-line">
+      <span>Authorised Signature &amp; Stamp</span>
+      <span>Name &amp; Designation</span>
+      <span>Date</span>
+    </div>
   </div>
 
   <div class="foot-id">

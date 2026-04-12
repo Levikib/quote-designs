@@ -65,9 +65,13 @@
 
   .closing { font-size:12px; color:#555; line-height:1.7; margin-top:20px }
 
-  .sig-row { display:flex; gap:28px; margin-top:22px }
-  .sig-col { flex:1; border-top:2px solid #E8A030; padding-top:6px;
-              font-size:10px; color:#aaa }
+  .sig-l { display:flex; gap:20px; margin-top:22px }
+  .sig-left-col { display:flex; flex-direction:column; gap:14px; flex:1 }
+  .sig-right-col { flex:1.2 }
+  .sig-mini { border-top:2px solid #E8A030; padding-top:5px; font-size:9px; color:#aaa }
+  .sig-big { border-top:2px solid #3D1060; padding-top:5px; font-size:9px; color:#aaa; height:100%; display:flex; flex-direction:column; justify-content:space-between }
+  .sig-big-lbl { font-size:8px; font-weight:700; color:#3D1060; letter-spacing:1.5px;
+                  text-transform:uppercase; margin-bottom:auto; padding-bottom:16px }
 
   .footer { background:#3D1060; padding:8px 36px; text-align:center;
              font-size:10.5px; color:rgba(255,255,255,0.5); font-weight:600 }
@@ -153,10 +157,14 @@
 
     <p class="closing">We remain at your disposal for any clarification and hope to be of service.</p>
 
-    <div class="sig-row">
-      <div class="sig-col">Authorised Signature</div>
-      <div class="sig-col">Name &amp; Designation</div>
-      <div class="sig-col">Company Stamp / Date</div>
+    <div class="sig-l">
+      <div class="sig-left-col">
+        <div class="sig-mini">Authorised Signature</div>
+        <div class="sig-mini">Name &amp; Designation</div>
+      </div>
+      <div class="sig-right-col">
+        <div class="sig-big"><div class="sig-big-lbl">OFFICIAL STAMP &amp; DATE</div><span>Company Stamp / Date</span></div>
+      </div>
     </div>
   </div>
 

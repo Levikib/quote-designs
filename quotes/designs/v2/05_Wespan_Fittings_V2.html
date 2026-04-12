@@ -71,9 +71,14 @@
 
   .closing { padding:16px 40px; font-size:12px; color:#555; line-height:1.7 }
 
-  .sig-row { display:flex; gap:24px; padding:0 40px 28px }
-  .sig-col { flex:1; border-top:2px solid #F0C040; padding-top:7px;
-              font-size:10px; color:#aaa }
+  .sig-area { padding:8px 40px 28px }
+  .sig-divider { display:flex; align-items:center; margin-bottom:16px }
+  .sig-dl { flex:1; height:1px; background:#e0f0f0 }
+  .sig-diamond { width:9px; height:9px; background:#F0C040; transform:rotate(45deg); margin:0 10px; flex-shrink:0 }
+  .sig-fields { display:flex; justify-content:flex-end; gap:40px }
+  .sig-field { text-align:right }
+  .sig-field-line { border-bottom:1.5px solid #F0C040; width:180px; height:32px; margin-bottom:5px }
+  .sig-field-lbl { font-size:9px; color:#aaa }
 
   /* FOOTER */
   .page-footer { background:#0D5C5C; padding:10px 40px;
@@ -161,10 +166,12 @@
 
   <p class="closing">We remain available for any further clarification and hope to be awarded the opportunity to serve.</p>
 
-  <div class="sig-row">
-    <div class="sig-col">Authorised Signature</div>
-    <div class="sig-col">Name &amp; Designation</div>
-    <div class="sig-col">Company Stamp / Date</div>
+  <div class="sig-area">
+    <div class="sig-divider"><div class="sig-dl"></div><div class="sig-diamond"></div><div class="sig-dl"></div></div>
+    <div class="sig-fields">
+      <div class="sig-field"><div class="sig-field-line"></div><div class="sig-field-lbl">Authorised Signature &amp; Stamp</div></div>
+      <div class="sig-field"><div class="sig-field-line"></div><div class="sig-field-lbl">Name, Designation &amp; Date</div></div>
+    </div>
   </div>
 
   <div class="page-footer">

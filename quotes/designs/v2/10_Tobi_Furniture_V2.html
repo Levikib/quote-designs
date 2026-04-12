@@ -81,10 +81,12 @@
 
   .closing { font-size:12px; color:#555; line-height:1.7; margin-top:20px }
 
-  .sig-row { display:flex; gap:28px; margin-top:22px; padding-top:16px;
-              border-top:1px dashed #ddd0c8 }
-  .sig-col { flex:1; font-size:10px; color:#aaa; padding-top:32px;
-              border-top:1.5px solid #E8A020 }
+  .sig-perf { border-top:2px dashed #ddd0c8; margin-top:22px; padding-top:6px;
+               text-align:center; font-size:8px; color:#ccc; letter-spacing:3px }
+  .sig-row { display:flex; gap:28px; margin-top:14px }
+  .sig-col { flex:1; font-size:10px; color:#aaa }
+  .sig-col-line { border-bottom:1.5px dashed #E8A020; height:32px; margin-bottom:5px }
+  .sig-col-lbl { font-size:9px; color:#aaa }
 
   .footer { background:#5C3010; display:flex; justify-content:space-between;
              align-items:center; padding:8px 28px; margin-top:24px }
@@ -179,10 +181,10 @@
 
     <p class="closing">We trust you will find our offer competitive and look forward to your positive response.</p>
 
+    <div class="sig-perf">✂ &nbsp;&nbsp; AUTHORISATION &nbsp;&nbsp; ✂</div>
     <div class="sig-row">
-      <div class="sig-col">Authorised Signature</div>
-      <div class="sig-col">Name &amp; Designation</div>
-      <div class="sig-col">Company Stamp / Date</div>
+      <div class="sig-col"><div class="sig-col-line"></div><div class="sig-col-lbl">Authorised Signature &amp; Stamp</div></div>
+      <div class="sig-col"><div class="sig-col-line"></div><div class="sig-col-lbl">Name, Designation &amp; Date</div></div>
     </div>
   </div>
 

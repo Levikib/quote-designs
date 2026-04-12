@@ -68,9 +68,11 @@
 
   .closing { font-size:12px; color:#555; line-height:1.7; margin-top:18px }
 
-  .sig-row { display:flex; gap:24px; margin-top:20px }
-  .sig-col { flex:1; border-top:2px solid #35A8E0; padding-top:6px;
-              font-size:10px; color:#aaa }
+  .sig-stack { margin-top:20px; border-left:4px solid #35A8E0; padding-left:16px }
+  .sig-item { margin-bottom:12px }
+  .sig-item-lbl { font-size:8px; font-weight:700; color:#0A4C7A; letter-spacing:2px;
+                   text-transform:uppercase; margin-bottom:5px }
+  .sig-item-line { border-bottom:1px solid #35A8E0; height:26px }
 
   /* FOOTER — part of outer frame colour */
   .footer { background:#0A4C7A; padding:8px 20px; text-align:center;
@@ -166,9 +168,10 @@
 
       <p class="closing">We remain at your disposal for any clarification and hope to be of service.</p>
 
-      <div class="sig-row">
-        <div class="sig-col">Authorised Signature &amp; Stamp</div>
-        <div class="sig-col">Name, Designation &amp; Date</div>
+      <div class="sig-stack">
+        <div class="sig-item"><div class="sig-item-lbl">Authorised Signature &amp; Stamp</div><div class="sig-item-line"></div></div>
+        <div class="sig-item"><div class="sig-item-lbl">Name &amp; Designation</div><div class="sig-item-line"></div></div>
+        <div class="sig-item"><div class="sig-item-lbl">Date</div><div class="sig-item-line"></div></div>
       </div>
     </div>
   </div>

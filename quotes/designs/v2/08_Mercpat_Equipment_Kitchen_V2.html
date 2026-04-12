@@ -88,9 +88,14 @@
   .closing { font-size:12px; color:#555; line-height:1.7; margin-top:20px;
               padding-top:16px; border-top:1px dashed #c0d8c0 }
 
-  .sig-row { display:flex; gap:32px; margin-top:24px }
-  .sig-col { flex:1; border-top:1.5px solid #c0d8c0; padding-top:7px;
-              font-size:10px; color:#aaa }
+  .sig-band { background:#1E4D1A; margin-top:24px; padding:14px 28px;
+               display:flex; gap:0; align-items:stretch }
+  .sig-field { flex:1; border-right:1px solid rgba(255,255,255,0.15); padding:0 20px }
+  .sig-field:first-child { padding-left:0 }
+  .sig-field:last-child { border-right:none }
+  .sig-f-lbl { font-size:8px; color:#E8B020; font-weight:700; letter-spacing:1.5px;
+                text-transform:uppercase; margin-bottom:8px }
+  .sig-f-line { border-bottom:1px dashed rgba(255,255,255,0.3); height:28px }
 
   .page-footer { border-top:2px solid #1E4D1A; border-bottom:2px solid #E8B020;
                   padding:7px 40px; text-align:center; background:#f5fbf5;
@@ -197,10 +202,10 @@
 
     <p class="closing">We remain committed to quality supply and timely delivery as specified above.</p>
 
-    <div class="sig-row">
-      <div class="sig-col">Authorised Signature</div>
-      <div class="sig-col">Name &amp; Designation</div>
-      <div class="sig-col">Company Stamp / Date</div>
+    <div class="sig-band">
+      <div class="sig-field"><div class="sig-f-lbl">Authorised Signature</div><div class="sig-f-line"></div></div>
+      <div class="sig-field"><div class="sig-f-lbl">Name &amp; Designation</div><div class="sig-f-line"></div></div>
+      <div class="sig-field"><div class="sig-f-lbl">Company Stamp / Date</div><div class="sig-f-line"></div></div>
     </div>
   </div>
 

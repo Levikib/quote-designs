@@ -75,11 +75,13 @@
   .closing { font-size:12px; color:#555; line-height:1.7; margin-top:20px;
               padding-top:16px; border-top:1px solid #eee }
 
-  /* SIG — right-aligned pair */
-  .sig-row { display:flex; justify-content:flex-end; gap:40px; margin-top:24px }
-  .sig-col { min-width:200px }
-  .sig-line { border-top:2px solid #30C5A0; margin-bottom:6px; padding-top:6px;
-               font-size:10px; color:#aaa }
+  /* SIG — stacked form fields, right-aligned block */
+  .sig-stack { display:flex; justify-content:flex-end; margin-top:24px }
+  .sig-inner { min-width:360px }
+  .sig-field { margin-bottom:14px }
+  .sig-field-lbl { font-size:8px; font-weight:700; color:#30C5A0; letter-spacing:2px;
+                    text-transform:uppercase; margin-bottom:6px }
+  .sig-field-line { border-bottom:1.5px solid #30C5A0; height:28px }
 
   .page-footer { border-top:3px solid #30C5A0; padding:9px 36px;
                   display:flex; justify-content:space-between; align-items:center;
@@ -164,9 +166,12 @@
 
     <p class="closing">We remain at your disposal for any further clarification and look forward to your positive response.</p>
 
-    <div class="sig-row">
-      <div class="sig-col"><div class="sig-line">Authorised Signature &amp; Stamp</div></div>
-      <div class="sig-col"><div class="sig-line">Name, Designation &amp; Date</div></div>
+    <div class="sig-stack">
+      <div class="sig-inner">
+        <div class="sig-field"><div class="sig-field-lbl">Authorised Signature &amp; Stamp</div><div class="sig-field-line"></div></div>
+        <div class="sig-field"><div class="sig-field-lbl">Name &amp; Designation</div><div class="sig-field-line"></div></div>
+        <div class="sig-field"><div class="sig-field-lbl">Date</div><div class="sig-field-line"></div></div>
+      </div>
     </div>
   </div>
 

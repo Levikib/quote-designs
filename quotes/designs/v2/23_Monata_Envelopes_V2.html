@@ -66,9 +66,12 @@
 
   .closing { padding:0 36px; font-size:12px; color:#555; line-height:1.7; margin-bottom:20px }
 
-  .sig-row { display:flex; padding:0 36px 28px; gap:32px }
-  .sig-col { flex:1; border-top:2px solid #E87722; padding-top:6px;
-              font-size:10px; color:#aaa }
+  .sig-row { display:flex; padding:0 36px 28px; gap:20px }
+  .sig-col { flex:1; border:1.5px solid #ddd; clip-path:polygon(12px 0%,100% 0%,100% 100%,0% 100%,0% 12px);
+              padding:10px 14px 12px }
+  .sig-col .sc-lbl { font-size:8px; font-weight:700; color:#E87722; letter-spacing:1.5px;
+                      text-transform:uppercase; margin-bottom:20px }
+  .sig-col .sc-line { border-top:1.5px solid #E87722 }
 
   .page-footer { background:#1A2C6B; padding:8px 36px;
                   display:flex; justify-content:space-between }
@@ -161,9 +164,9 @@
   <p class="closing">We trust you will find our offer competitive and look forward to your positive response.</p>
 
   <div class="sig-row">
-    <div class="sig-col">Authorised Signature</div>
-    <div class="sig-col">Name &amp; Designation</div>
-    <div class="sig-col">Company Stamp / Date</div>
+    <div class="sig-col"><div class="sc-lbl">Authorised Signature</div><div class="sc-line"></div></div>
+    <div class="sig-col"><div class="sc-lbl">Name &amp; Designation</div><div class="sc-line"></div></div>
+    <div class="sig-col"><div class="sc-lbl">Company Stamp / Date</div><div class="sc-line"></div></div>
   </div>
 
   <div class="page-footer">
