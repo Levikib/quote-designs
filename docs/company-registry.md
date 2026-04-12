@@ -50,6 +50,8 @@ Each company listed here has a **locked design identity**. When they appear in a
 - **Address:** Nairobi, Kenya
 - **Quote history:**
   - `03_Adtech_Furniture.html` — Office Furniture, 10 Apr 2026, REF: ADA/PR/2026/F-01, KES 2,458,500
+  - `22_Adtech_Envelopes_V2.html` — Branded Envelopes, 11 Apr 2026, REF: ADA/PR/2026/F-02, KES 2,100,000
+  - `29_Adtech_Chairs_V2.html` — Executive Chairs, 10 Apr 2026, REF: ADA/PR/2026/F-03, KES 1,395,000
 
 ---
 
@@ -65,6 +67,7 @@ Each company listed here has a **locked design identity**. When they appear in a
 - **Address:** Nairobi, Kenya
 - **Quote history:**
   - `04_Monata_Fittings.html` — Office Fittings, 9 Apr 2026, REF: MNT-QT/2026/002, KES 2,600,000
+  - `23_Monata_Envelopes_V2.html` — Branded Envelopes, 10 Apr 2026, REF: MNT-QT/2026/004, KES 2,310,000
 
 ---
 
@@ -79,6 +82,7 @@ Each company listed here has a **locked design identity**. When they appear in a
 - **Address:** P.O. Box 3244 – 00100, Nairobi, Kenya
 - **Quote history:**
   - `05_Wespan_Fittings.html` — Office Fittings, 8 Apr 2026, REF: WAL/2026/Q-015, KES 2,750,000
+  - `35_Wespan_Equipment_V2.html` — ICT Equipment, 10 Apr 2026, REF: WAL/2026/Q-016, KES 1,722,000
 
 ---
 
@@ -93,6 +97,7 @@ Each company listed here has a **locked design identity**. When they appear in a
 - **Address:** Nairobi, Kenya
 - **Quote history:**
   - `06_Roshani_Fittings.html` — Office Fittings, 10 Apr 2026, REF: RV.QTN.04.2026, KES 2,870,000
+  - `30_Roshani_Chairs_V2.html` — Executive Chairs, 14 Apr 2026, REF: RV.QTN.04.2026/02, KES 1,455,000
 
 ---
 
@@ -109,6 +114,7 @@ Each company listed here has a **locked design identity**. When they appear in a
 - **Quote history:**
   - `07_Hayward_Equipment_Kitchen.html` — Office + Kitchen Equipment, 9 Apr 2026, REF: HAL/QT/APR2026/07, KES 2,068,000
   - `15_Hayward_Equipment_Kitchen.html` — Office + Kitchen Equipment, 10 Apr 2026, REF: HAL/QT/APR2026/08, KES 1,780,500
+  - `20_Hayward_Fittings_V2.html` — Carpet Installation, 10 Apr 2026, REF: HAL/QT/APR2026/10, KES 2,090,000
 
 ---
 
@@ -124,6 +130,7 @@ Each company listed here has a **locked design identity**. When they appear in a
 - **Quote history:**
   - `08_Mercpat_Equipment_Kitchen.html` — Office + Kitchen Equipment, 8 Apr 2026, REF: MIL-QN/2026/008, KES 2,276,500
   - `17_Mercpat_Equipment.html` — Office Equipment, 8 Apr 2026, REF: MIL-QN/2026/009, KES 2,216,000
+  - `32_Mercpat_PSOffice_V2.html` — PS Office Furniture, 10 Apr 2026, REF: MIL-QN/2026/010, KES 1,095,000
 
 ---
 
@@ -138,6 +145,7 @@ Each company listed here has a **locked design identity**. When they appear in a
 - **Address:** Nairobi, Kenya
 - **Quote history:**
   - `09_Crisima_Equipment_Kitchen.html` — Office + Kitchen Equipment, 10 Apr 2026, REF: CGS/Q/2026-APR/09, KES 2,383,500
+  - `36_Crisima_Equipment_V2.html` — ICT Equipment, 14 Apr 2026, REF: CGS/Q/2026-APR/10, KES 1,783,000
 
 ---
 
@@ -155,6 +163,7 @@ Each company listed here has a **locked design identity**. When they appear in a
 - **Address:** Nairobi, Kenya
 - **Quote history:**
   - `10_Tobi_Furniture.html` — Office Furniture, 9 Apr 2026, REF: TBS/QTN-001/APR/2026, KES 1,748,000
+  - `31_Tobi_PSOffice_V2.html` — PS Office Furniture, 11 Apr 2026, REF: TBS/QTN-002/APR/2026, KES 995,000
 
 ---
 
@@ -170,6 +179,7 @@ Each company listed here has a **locked design identity**. When they appear in a
 - **Address:** Nairobi, Kenya
 - **Quote history:**
   - `11_Linkmi_Furniture.html` — Office Furniture, 8 Apr 2026, REF: LML/QTN-002/APR/2026, KES 1,929,000
+  - `21_Linkmi_Fittings_V2.html` — Carpet Installation, 14 Apr 2026, REF: LML/QTN-005/APR/2026, KES 2,210,000
 
 ---
 
@@ -185,6 +195,7 @@ Each company listed here has a **locked design identity**. When they appear in a
 - **Address:** Nairobi, Kenya
 - **Quote history:**
   - `13_Sakamu_Equipment_Kitchen.html` — Office + Kitchen Equipment, 9 Apr 2026, REF: SAK/QTN-001/APR/2026, KES 1,556,000
+  - `33_Sakamu_PSOffice_V2.html` — PS Office Furniture, 14 Apr 2026, REF: SAK/QTN-002/APR/2026, KES 1,140,000
 
 ---
 
@@ -199,6 +210,7 @@ Each company listed here has a **locked design identity**. When they appear in a
 - **Address:** Nairobi, Kenya
 - **Quote history:**
   - `14_Lifobird_Equipment_Kitchen.html` — Office + Kitchen Equipment, 8 Apr 2026, REF: LIL/QTN-003/APR/2026, KES 1,713,000
+  - `19_Lifobird_Fittings_V2.html` — Carpet Installation, 11 Apr 2026, REF: LIL/QTN-004/APR/2026, KES 1,900,000
 
 ---
 
@@ -214,6 +226,65 @@ Each company listed here has a **locked design identity**. When they appear in a
 - **Address:** Nairobi, Kenya
 - **Quote history:**
   - `16_Mastrick_Equipment.html` — Office Equipment, 9 Apr 2026, REF: MST/QTN-001/APR/2026, KES 2,015,000
+  - `27_Mastrick_Chairs_V2.html` — Conference Chairs, 14 Apr 2026, REF: MST/QTN-002/APR/2026, KES 2,220,000
+
+---
+
+### Bekks Enterprise
+- **Slug:** `Bekks`
+- **Primary colour:** `#0A5C6E` (deep teal)
+- **Accent colour:** `#E85C35` (coral orange)
+- **Row highlight:** `#EAF5F7`
+- **Logo mark:** Shield with B letterform, teal fill, coral stroke
+- **Header style:** Stacked band — teal left panel (company + logo), coral right panel (QUOTATION badge), white-space:nowrap on QUOTATION
+- **Footer style:** Two-tone split footer (teal left, coral right)
+- **Address:** Nairobi, Kenya
+- **Quote history:**
+  - `24_Bekks_Envelopes_V2.html` — Branded Envelopes, 14 Apr 2026, REF: BEK/QTN/APR/2026/02, KES 2,460,000
+  - `25_Bekks_Chairs_V2.html` — Conference Chairs, 11 Apr 2026, REF: BEK/QTN/APR/2026/03, KES 1,950,000
+
+---
+
+### Tabs General Supplies
+- **Slug:** `Tabs`
+- **Primary colour:** `#2B2B40` (charcoal navy)
+- **Accent colour:** `#2EB88A` (jade green)
+- **Row highlight:** `#EBF7F4`
+- **Logo mark:** T-mark SVG (horizontal + vertical rects forming a T shape)
+- **Header style:** Three colour stripes top (8px dark + 4px jade + 2px mid); jade right-side tab holding QUOTATION (white-space:nowrap); company left
+- **Footer style:** Jade top strip + charcoal content bar, company name in jade
+- **Address:** Nairobi, Kenya
+- **Quote history:**
+  - `26_Tabs_Chairs_V2.html` — Conference Chairs, 10 Apr 2026, REF: TGS/QTN/2026/APR/01, KES 2,145,000
+
+---
+
+### Greatpeak Merchants
+- **Slug:** `Greatpeak`
+- **Primary colour:** `#6B1040` (burgundy)
+- **Accent colour:** `#D4A820` (gold)
+- **Row highlight:** `#FDF5F8`
+- **Logo mark:** Mountain peak / caret triangle, `GPM` text, gold stroke
+- **Header style:** Burgundy full banner, gold right panel with clip-path diagonal cut (`polygon(20px 0%, 100% 0%, 100% 100%, 0% 100%)`), mountain logo left
+- **Footer style:** Solid burgundy bar, gold company name left
+- **Email:** greatpeakmerchants@gmail.com
+- **Address:** Nairobi, Kenya
+- **Quote history:**
+  - `28_Greatpeak_Chairs_V2.html` — Executive Chairs, 11 Apr 2026, REF: GPM/QTN/APR/2026/01, KES 1,275,000
+
+---
+
+### Neisa Group of Solutions
+- **Slug:** `Neisa`
+- **Primary colour:** `#0D2240` (deep navy)
+- **Accent colour:** `#F05A1A` (electric orange)
+- **Row highlight:** `#F4F8FF`
+- **Logo mark:** Hexagon double outline, large `N` letterform in white, orange bottom line
+- **Header style:** Navy full banner, corner triangle accent (CSS border-trick), hexagon logo left, QUOTATION word right (white-space:nowrap); orange 4px bar below
+- **Footer style:** Orange top strip + navy content bar, company name in orange
+- **Address:** Nairobi, Kenya
+- **Quote history:**
+  - `34_Neisa_Equipment_V2.html` — ICT Equipment, 11 Apr 2026, REF: NGS/QTN/APR/2026/01, KES 1,570,000
 
 ---
 

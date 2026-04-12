@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quotation – Monata Enterprise Ltd</title>
+<style>
+  * { box-sizing:border-box; margin:0; padding:0 }
+  body { font-family:'Arial',sans-serif; background:#eceef8; padding:30px 16px }
+  @page { margin:0 }
+  @media print { body { background:white; padding:0 } }
+
+  .page { max-width:860px; margin:0 auto; background:white;
+          box-shadow:0 6px 32px rgba(0,0,0,0.13); overflow:hidden }
+
+  .header { background:#1A2C6B; padding:26px 36px; position:relative; overflow:hidden }
+  .header svg.bg { position:absolute; top:0; right:0; height:100%; opacity:0.08 }
+  .header-inner { display:flex; align-items:center; justify-content:space-between; position:relative }
+  .company-block { flex:1; padding-left:20px }
+  .company-block h1 { font-size:24px; font-weight:900; color:white; letter-spacing:0.3px }
+  .company-block p { font-size:9.5px; color:rgba(255,255,255,0.5); letter-spacing:1.8px; margin-top:5px }
+  .company-block p2 { font-size:9px; color:rgba(255,255,255,0.35); display:block; margin-top:2px }
+
+  .meta-strip { display:flex; background:#E87722 }
+  .meta-left { flex:1.2; padding:14px 36px; background:#E87722 }
+  .meta-right { flex:0.8; padding:14px 28px; background:#1A2C6B;
+                 display:flex; flex-direction:column; gap:6px }
+  .meta-label { font-size:8px; color:rgba(255,255,255,0.6); letter-spacing:1.5px;
+                 font-weight:700; text-transform:uppercase }
+  .meta-value { font-size:12.5px; font-weight:800; color:white; margin-top:1px }
+  .meta-value.small { font-size:11px }
+
+  .recipient-grid { display:flex; gap:0; border-bottom:2px solid #E87722 }
+  .rec-card { flex:1; padding:16px 36px; border-right:1px solid #eee }
+  .rec-card:last-child { border-right:none }
+  .rc-label { font-size:8.5px; color:#E87722; font-weight:700; letter-spacing:1.5px;
+               text-transform:uppercase; margin-bottom:5px }
+  .rc-value { font-size:12.5px; font-weight:700; color:#1A2C6B }
+
+  .subject-strip { padding:10px 36px; background:#f4f6fc; border-bottom:1px solid #e0e4f0 }
+  .subject-strip .sl { font-size:8.5px; color:#E87722; font-weight:700;
+                         letter-spacing:1.5px; margin-bottom:3px }
+  .subject-strip .sv { font-size:12px; font-weight:700; color:#1A2C6B }
+
+  .intro { padding:16px 36px 0; font-size:12px; color:#555; line-height:1.7 }
+
+  table.items { width:100%; border-collapse:collapse; font-size:12px; margin-top:16px }
+  table.items thead tr { background:#1A2C6B }
+  table.items thead th { color:white; padding:10px 12px; font-size:11px }
+  table.items thead th:first-child { background:#E87722 }
+  table.items tbody td { padding:10px 12px; border-bottom:1px solid #eeeefb; color:#333 }
+  table.items tbody tr:nth-child(even) { background:#f6f7fd }
+  table.items .num { text-align:center; font-weight:800; color:white; background:#E87722 !important }
+  table.items tbody tr:nth-child(even) .num { background:#d4661a !important }
+  table.items .right { text-align:right }
+  table.items .center { text-align:center }
+
+  .totals-area { padding:0 36px 24px; margin-top:2px }
+  .totals-flex { display:flex; justify-content:space-between; align-items:flex-end; margin-top:14px }
+  .vat-note { font-size:10px; color:#aaa; font-style:italic }
+  .gt-box { background:#1A2C6B; padding:14px 24px; min-width:300px;
+              display:flex; justify-content:space-between; align-items:center;
+              border-left:6px solid #E87722 }
+  .gt-box .gl { font-size:11px; font-weight:700; color:white; letter-spacing:1px }
+  .gt-box .ga { font-size:22px; font-weight:900; color:#E87722 }
+
+  .closing { padding:0 36px; font-size:12px; color:#555; line-height:1.7; margin-bottom:20px }
+
+  .sig-row { display:flex; padding:0 36px 28px; gap:32px }
+  .sig-col { flex:1; border-top:2px solid #E87722; padding-top:6px;
+              font-size:10px; color:#aaa }
+
+  .page-footer { background:#1A2C6B; padding:8px 36px;
+                  display:flex; justify-content:space-between }
+  .page-footer span { font-size:10px; color:rgba(255,255,255,0.55); font-weight:600 }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <svg class="bg" viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="150,10 290,80 150,110 10,80" fill="white"/>
+      <polygon points="150,30 250,75 150,95 50,75" fill="white"/>
+    </svg>
+    <div class="header-inner">
+      <svg width="68" height="68" viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="34,4 62,19 62,49 34,64 6,49 6,19" fill="none" stroke="#E87722" stroke-width="2.5"/>
+        <polygon points="34,12 54,23 54,45 34,56 14,45 14,23" fill="rgba(232,119,34,0.15)"/>
+        <text x="34" y="33" text-anchor="middle" font-family="Arial" font-weight="900" font-size="12" fill="#E87722">MNT</text>
+        <text x="34" y="47" text-anchor="middle" font-family="Arial" font-size="8" fill="rgba(255,255,255,0.6)">ENTERPRISE</text>
+      </svg>
+      <div class="company-block">
+        <h1>Monata Enterprise Ltd</h1>
+        <p>SUPPLY &nbsp;·&nbsp; FITTINGS &nbsp;·&nbsp; PROCUREMENT</p>
+        <p2>monataenterprise3@gmail.com &nbsp;·&nbsp; Nairobi, Kenya</p2>
+      </div>
+      <div style="text-align:right">
+        <div style="font-size:9px;color:rgba(232,119,34,0.8);letter-spacing:2px;font-weight:700">OFFICIAL</div>
+        <div style="font-size:26px;font-weight:900;color:white;line-height:1;white-space:nowrap">QUOTATION</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="meta-strip">
+    <div class="meta-left">
+      <div class="meta-label">Quotation Reference</div>
+      <div class="meta-value">MNT-QT/2026/004</div>
+    </div>
+    <div class="meta-right">
+      <div>
+        <div class="meta-label">Date Issued</div>
+        <div class="meta-value small">10 April 2026</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="recipient-grid">
+    <div class="rec-card">
+      <div class="rc-label">Addressed To</div>
+      <div class="rc-value">Ministry of Foreign Affairs Kenya</div>
+    </div>
+    <div class="rec-card">
+      <div class="rc-label">Attention</div>
+      <div class="rc-value">Head Office</div>
+    </div>
+  </div>
+
+  <div class="subject-strip">
+    <div class="sl">Subject</div>
+    <div class="sv">Supply and Delivery of Branded A4 Envelopes</div>
+  </div>
+
+  <p class="intro">We are pleased to present our competitive quotation for the supply and delivery as itemised below.</p>
+
+  <table class="items" style="margin:0">
+    <thead>
+      <tr>
+        <th style="width:5%;text-align:center">#</th>
+        <th style="text-align:left">Item Description</th>
+        <th style="width:12%;text-align:center">Qty</th>
+        <th style="width:17%;text-align:right">Unit Price (KES)</th>
+        <th style="width:17%;text-align:right">Total (KES)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="num">1</td><td>Branded A4 Envelopes</td><td class="center">30,000 Pcs</td><td class="right">77</td><td class="right">2,310,000</td></tr>
+    </tbody>
+  </table>
+
+  <div class="totals-area">
+    <div class="totals-flex">
+      <div class="vat-note">All prices inclusive of VAT at 16%</div>
+      <div class="gt-box">
+        <span class="gl">GRAND TOTAL</span>
+        <span class="ga">KES 2,310,000</span>
+      </div>
+    </div>
+  </div>
+
+  <p class="closing">We trust you will find our offer competitive and look forward to your positive response.</p>
+
+  <div class="sig-row">
+    <div class="sig-col">Authorised Signature</div>
+    <div class="sig-col">Name &amp; Designation</div>
+    <div class="sig-col">Company Stamp / Date</div>
+  </div>
+
+  <div class="page-footer">
+    <span>Monata Enterprise Ltd</span>
+    <span>monataenterprise3@gmail.com &nbsp;·&nbsp; Nairobi, Kenya</span>
+  </div>
+
+</div>
+</body>
+</html>

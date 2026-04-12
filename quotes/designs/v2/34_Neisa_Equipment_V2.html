@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quotation – Neisa Group of Solutions</title>
+<style>
+  * { box-sizing:border-box; margin:0; padding:0 }
+  body { font-family:'Arial',sans-serif; background:#e8eef7; padding:30px 16px }
+  @page { margin:0 }
+  @media print { body { background:white; padding:0 } }
+
+  /* DIAGONAL RIBBON STYLE — navy #0D2240, electric orange #F05A1A */
+  /* Header: full-width navy block, company name left, QUOTATION badge right */
+  /* Left edge: vertical orange stripe (8px) runs full page height */
+  /* Table: clean white with orange accent numbering */
+
+  .page { max-width:860px; margin:0 auto; background:white;
+          box-shadow:0 6px 32px rgba(0,0,0,0.13); overflow:hidden;
+          display:flex; flex-direction:column; min-height:880px }
+
+  /* HEADER */
+  .header { background:#0D2240; padding:0; position:relative; overflow:hidden }
+  .header::before { content:''; position:absolute; top:0; right:0;
+                    width:0; height:0;
+                    border-style:solid;
+                    border-width:0 110px 110px 0;
+                    border-color:transparent rgba(240,90,26,0.12) transparent transparent }
+  .hdr-inner { display:flex; align-items:center; justify-content:space-between;
+                padding:26px 32px; gap:20px }
+
+  .hdr-brand { display:flex; align-items:center; gap:18px }
+  .brand-name { font-size:24px; font-weight:900; color:white; letter-spacing:0.3px; line-height:1 }
+  .brand-tag { font-size:8.5px; color:rgba(240,90,26,0.8); letter-spacing:2px; margin-top:5px }
+  .brand-loc { font-size:9px; color:rgba(255,255,255,0.35); margin-top:2px }
+
+  .hdr-doc { text-align:right }
+  .doc-word { font-size:32px; font-weight:900; color:white; letter-spacing:1px;
+               line-height:1; white-space:nowrap }
+  .doc-sub { font-size:8px; color:rgba(240,90,26,0.8); letter-spacing:3px;
+              margin-top:4px; font-weight:700 }
+
+  /* Orange accent bar */
+  .orange-bar { height:4px; background:#F05A1A }
+  .navy-bar { height:2px; background:#0D2240; opacity:0.2 }
+
+  /* REF / DATE strip */
+  .ref-strip { display:flex; justify-content:flex-end; gap:32px; padding:9px 32px;
+                background:#f2f6fc; border-bottom:1px solid #dce6f4 }
+  .rs-item { display:flex; gap:6px; align-items:baseline }
+  .rs-label { font-size:8px; font-weight:700; color:#0D2240; letter-spacing:1.5px;
+               text-transform:uppercase }
+  .rs-val { font-size:11px; font-weight:700; color:#0D2240 }
+
+  /* CONTENT */
+  .content { padding:20px 32px; flex:1 }
+
+  /* TO block */
+  .to-block { display:flex; gap:0; margin-bottom:14px; padding:12px 16px;
+               background:#f2f6fc; border-left:5px solid #F05A1A }
+  .to-col { flex:1 }
+  .to-col + .to-col { border-left:1px solid #dce6f4; padding-left:16px; margin-left:0 }
+  .to-label { font-size:8px; font-weight:700; color:#F05A1A; letter-spacing:2px;
+               text-transform:uppercase; margin-bottom:4px }
+  .to-val { font-size:12px; font-weight:700; color:#0D2240 }
+
+  /* Subject */
+  .subject { margin-bottom:14px; padding:9px 16px 9px 21px;
+              border-left:5px solid #0D2240; background:#f9fbff }
+  .subj-label { font-size:8px; font-weight:700; color:#0D2240; letter-spacing:2px;
+                 text-transform:uppercase; margin-bottom:3px }
+  .subj-val { font-size:12px; font-weight:700; color:#0D2240 }
+
+  .intro { font-size:12px; color:#555; line-height:1.7; margin-bottom:16px }
+
+  table.items { width:100%; border-collapse:collapse; font-size:12px }
+  table.items thead tr { background:#0D2240 }
+  table.items thead th { color:white; padding:10px 12px; font-size:11px }
+  table.items tbody td { padding:10px 12px; border-bottom:1px solid #edf2fa; color:#333 }
+  table.items tbody tr:nth-child(even) { background:#f4f8ff }
+  table.items .num { text-align:center; color:#F05A1A; font-weight:900; font-size:14px }
+  table.items .right { text-align:right }
+  table.items .center { text-align:center }
+
+  /* TOTAL */
+  .total-row { display:flex; justify-content:space-between; align-items:center;
+                background:#0D2240; padding:14px 20px; margin-top:0 }
+  .tr-vat { font-size:10px; color:rgba(255,255,255,0.4); font-style:italic }
+  .tr-right { display:flex; align-items:center; gap:20px }
+  .tr-label { font-size:10px; font-weight:700; color:rgba(255,255,255,0.6);
+               letter-spacing:2px; text-transform:uppercase }
+  .tr-amount { font-size:23px; font-weight:900; color:#F05A1A }
+
+  .closing { font-size:12px; color:#555; line-height:1.7; margin-top:20px }
+
+  .sig-row { display:flex; gap:24px; margin-top:22px; padding-top:14px;
+              border-top:1px dashed #dce6f4 }
+  .sig-col { flex:1; border-top:2px solid #F05A1A; padding-top:6px;
+              font-size:10px; color:#aaa }
+
+  /* FOOTER */
+  .footer { margin-top:auto }
+  .footer-bar { height:4px; background:#F05A1A }
+  .footer-content { background:#0D2240; padding:8px 32px;
+                     display:flex; justify-content:space-between; align-items:center }
+  .footer-name { font-size:11px; font-weight:700; color:#F05A1A }
+  .footer-loc { font-size:10px; color:rgba(255,255,255,0.4) }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="hdr-inner">
+      <div class="hdr-brand">
+        <svg width="62" height="62" viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
+          <!-- Hexagon with N inside -->
+          <polygon points="34,4 62,19 62,49 34,64 6,49 6,19" fill="none" stroke="#F05A1A" stroke-width="2"/>
+          <polygon points="34,12 54,23 54,45 34,56 14,45 14,23" fill="rgba(240,90,26,0.1)"/>
+          <text x="34" y="40" text-anchor="middle" font-family="Arial" font-weight="900" font-size="26" fill="white">N</text>
+          <line x1="18" y1="52" x2="50" y2="52" stroke="#F05A1A" stroke-width="1.5" opacity="0.6"/>
+        </svg>
+        <div>
+          <div class="brand-name">Neisa Group of Solutions</div>
+          <div class="brand-tag">SUPPLY &nbsp;·&nbsp; TECHNOLOGY &nbsp;·&nbsp; SOLUTIONS</div>
+          <div class="brand-loc">Nairobi, Kenya</div>
+        </div>
+      </div>
+      <div class="hdr-doc">
+        <div class="doc-word">QUOTATION</div>
+        <div class="doc-sub">OFFICIAL DOCUMENT</div>
+      </div>
+    </div>
+  </div>
+  <div class="orange-bar"></div>
+  <div class="navy-bar"></div>
+
+  <div class="ref-strip">
+    <div class="rs-item"><span class="rs-label">Ref:</span><span class="rs-val">NGS/QTN/APR/2026/01</span></div>
+    <div class="rs-item"><span class="rs-label">Date:</span><span class="rs-val">11 April 2026</span></div>
+    <div class="rs-item"><span class="rs-label">VAT:</span><span class="rs-val">Inclusive @ 16%</span></div>
+  </div>
+
+  <div class="content">
+    <div class="to-block">
+      <div class="to-col">
+        <div class="to-label">Addressed To</div>
+        <div class="to-val">Ministry of Foreign Affairs Kenya</div>
+      </div>
+      <div class="to-col" style="padding-left:20px; border-left:1px solid #dce6f4">
+        <div class="to-label">Attention</div>
+        <div class="to-val">PS Office</div>
+      </div>
+    </div>
+
+    <div class="subject">
+      <div class="subj-label">Subject</div>
+      <div class="subj-val">Supply and Delivery of ICT Equipment for the PS Office</div>
+    </div>
+
+    <p class="intro">We are pleased to submit our competitive quotation for the above-referenced requirement for your consideration and evaluation.</p>
+
+    <table class="items">
+      <thead>
+        <tr>
+          <th style="width:5%;text-align:center">#</th>
+          <th style="text-align:left">Item Description</th>
+          <th style="width:9%;text-align:center">Qty</th>
+          <th style="width:17%;text-align:right">Unit Price (KES)</th>
+          <th style="width:17%;text-align:right">Total (KES)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="num">1</td><td>MacBook</td><td class="center">1 Pc</td><td class="right">515,000</td><td class="right">515,000</td></tr>
+        <tr><td class="num">2</td><td>Tablet</td><td class="center">1 Pc</td><td class="right">315,000</td><td class="right">315,000</td></tr>
+        <tr><td class="num">3</td><td>Laptop</td><td class="center">2 Pcs</td><td class="right">295,000</td><td class="right">590,000</td></tr>
+        <tr><td class="num">4</td><td>Accessories</td><td class="center">1 Lot</td><td class="right">150,000</td><td class="right">150,000</td></tr>
+      </tbody>
+    </table>
+
+    <div class="total-row">
+      <span class="tr-vat">All prices inclusive of VAT at 16%</span>
+      <div class="tr-right">
+        <span class="tr-label">Grand Total</span>
+        <span class="tr-amount">KES 1,570,000</span>
+      </div>
+    </div>
+
+    <p class="closing">We trust you will find our offer competitive and look forward to your positive response.</p>
+
+    <div class="sig-row">
+      <div class="sig-col">Authorised Signature</div>
+      <div class="sig-col">Name &amp; Designation</div>
+      <div class="sig-col">Company Stamp / Date</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-bar"></div>
+    <div class="footer-content">
+      <span class="footer-name">Neisa Group of Solutions</span>
+      <span class="footer-loc">Nairobi, Kenya</span>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

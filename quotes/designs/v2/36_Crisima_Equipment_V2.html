@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quotation – Crisima General Supplies</title>
+<style>
+  * { box-sizing:border-box; margin:0; padding:0 }
+  body { font-family:'Arial',sans-serif; background:#f0ebf9; padding:30px 16px }
+  @page { margin:0 }
+  @media print { body { background:white; padding:0 } }
+
+  .page { max-width:860px; margin:0 auto; background:white;
+          box-shadow:0 6px 32px rgba(0,0,0,0.13); overflow:hidden }
+
+  .header { background:#4A1A60; padding:24px 36px; overflow:hidden; position:relative }
+  .header::after { content:''; position:absolute; right:-30px; top:-30px;
+                   width:160px; height:160px; border-radius:50%;
+                   background:rgba(26,184,232,0.1) }
+  .header-row { display:flex; align-items:center; justify-content:space-between; position:relative }
+  .logo-name { display:flex; align-items:center; gap:16px }
+  .company-h { color:white }
+  .company-h h1 { font-size:21px; font-weight:900; letter-spacing:0.3px }
+  .company-h p { font-size:9px; color:rgba(26,184,232,0.8); letter-spacing:2px; margin-top:4px }
+  .company-h p2 { font-size:9px; color:rgba(255,255,255,0.35); display:block; margin-top:2px }
+
+  .doc-right { text-align:right }
+  .doc-right .qt { font-size:24px; font-weight:900; color:#1AB8E8; letter-spacing:1px;
+                    white-space:nowrap }
+  .doc-right .qt-official { font-size:8px; color:rgba(255,255,255,0.45);
+                               letter-spacing:2px; margin-bottom:3px }
+
+  .info-grid { display:flex; background:#f8f3ff; border-bottom:3px solid #4A1A60 }
+  .ig-col { flex:1; padding:14px 20px; border-right:1px solid #ede8f8 }
+  .ig-col:last-child { border-right:none }
+  .ig-label { font-size:8px; color:#4A1A60; font-weight:700; letter-spacing:1.5px;
+               text-transform:uppercase; margin-bottom:5px }
+  .ig-value { font-size:12px; font-weight:700; color:#333 }
+  .ig-value.accent { color:#4A1A60 }
+
+  .subject-banner { background:#1AB8E8; padding:10px 36px }
+  .subject-banner p { font-size:11.5px; font-weight:700; color:#4A1A60 }
+
+  .intro { padding:16px 36px 10px; font-size:12px; color:#555; line-height:1.7 }
+
+  .section-title { display:flex; align-items:center; gap:12px; padding:14px 36px 8px }
+  .st-bar { width:4px; height:20px; background:#4A1A60; border-radius:2px; flex-shrink:0 }
+  .st-text { font-size:12px; font-weight:800; color:#4A1A60; letter-spacing:0.5px }
+  .st-count { background:#1AB8E8; color:#4A1A60; font-size:9px; font-weight:700;
+               padding:2px 8px; border-radius:10px; margin-left:4px }
+
+  table.items { width:100%; border-collapse:collapse; font-size:11.5px }
+  table.items thead tr { background:#4A1A60 }
+  table.items thead th { color:white; padding:8px 12px; font-size:11px }
+  table.items tbody td { padding:8px 12px; border-bottom:1px solid #f0ebf9; color:#333 }
+  table.items tbody tr:nth-child(even) { background:#faf6ff }
+  table.items .num { text-align:center; color:#1AB8E8; font-weight:800 }
+  table.items .right { text-align:right }
+  table.items .center { text-align:center }
+
+  .total-wrap { padding:16px 36px 0 }
+  .total-inner { display:flex; align-items:stretch; justify-content:flex-end }
+  .vat-cell { background:#f8f3ff; padding:12px 20px; border:1px solid #ede8f8;
+               display:flex; align-items:center; font-size:10px; color:#888; font-style:italic }
+  .gt-cell { background:#4A1A60; padding:12px 24px;
+              display:flex; flex-direction:column; justify-content:center; min-width:240px }
+  .gt-cell .gl { font-size:9px; color:#1AB8E8; letter-spacing:2px; font-weight:700 }
+  .gt-cell .ga { font-size:20px; font-weight:900; color:white; margin-top:2px }
+
+  .closing { padding:16px 36px; font-size:12px; color:#555; line-height:1.7 }
+
+  .sig-row { display:flex; gap:24px; padding:0 36px 28px }
+  .sig-col { flex:1; border-top:2px solid #1AB8E8; padding-top:7px;
+              font-size:10px; color:#aaa }
+
+  .page-footer { background:#4A1A60; padding:8px 36px;
+                  display:flex; justify-content:space-between }
+  .page-footer span { font-size:10px; color:rgba(255,255,255,0.55); font-weight:600 }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="header-row">
+      <div class="logo-name">
+        <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="32,4 60,18 60,46 32,60 4,46 4,18" fill="none" stroke="#1AB8E8" stroke-width="2"/>
+          <polygon points="32,11 53,23 53,41 32,53 11,41 11,23" fill="rgba(26,184,232,0.12)"/>
+          <text x="32" y="29" text-anchor="middle" font-family="Arial" font-weight="900" font-size="11" fill="#1AB8E8">CGS</text>
+          <text x="32" y="43" text-anchor="middle" font-family="Arial" font-size="8" fill="rgba(255,255,255,0.6)">SUPPLIES</text>
+        </svg>
+        <div class="company-h">
+          <h1>Crisima General Supplies</h1>
+          <p>SUPPLY &nbsp;·&nbsp; EQUIPMENT &nbsp;·&nbsp; PROCUREMENT</p>
+          <p2>Nairobi, Kenya</p2>
+        </div>
+      </div>
+      <div class="doc-right">
+        <div class="qt-official">OFFICIAL DOCUMENT</div>
+        <div class="qt">QUOTATION</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-grid">
+    <div class="ig-col">
+      <div class="ig-label">Addressed To</div>
+      <div class="ig-value">Ministry of Foreign Affairs – Kenya</div>
+    </div>
+    <div class="ig-col">
+      <div class="ig-label">Attention</div>
+      <div class="ig-value">PS Office</div>
+    </div>
+    <div class="ig-col">
+      <div class="ig-label">Reference No.</div>
+      <div class="ig-value accent">CGS/Q/2026-APR/10</div>
+    </div>
+    <div class="ig-col">
+      <div class="ig-label">Date Issued</div>
+      <div class="ig-value accent">14 April 2026</div>
+    </div>
+  </div>
+
+  <div class="subject-banner">
+    <p>Supply and Delivery of ICT Equipment for the PS Office</p>
+  </div>
+
+  <p class="intro">Please find below our price quotation prepared in response to your above-referenced requirement.</p>
+
+  <table class="items">
+    <thead>
+      <tr>
+        <th style="width:5%;text-align:center">#</th>
+        <th style="text-align:left">Item Description</th>
+        <th style="width:10%;text-align:center">Qty</th>
+        <th style="width:16%;text-align:right">Unit Price (KES)</th>
+        <th style="width:16%;text-align:right">Total (KES)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="num">1</td><td>MacBook</td><td class="center">1 Pc</td><td class="right">580,000</td><td class="right">580,000</td></tr>
+      <tr><td class="num">2</td><td>Laptop</td><td class="center">2 Pcs</td><td class="right">335,000</td><td class="right">670,000</td></tr>
+      <tr><td class="num">3</td><td>Tablet</td><td class="center">1 Pc</td><td class="right">358,000</td><td class="right">358,000</td></tr>
+      <tr><td class="num">4</td><td>Accessories</td><td class="center">1 Lot</td><td class="right">175,000</td><td class="right">175,000</td></tr>
+    </tbody>
+  </table>
+
+  <div class="total-wrap">
+    <div class="total-inner">
+      <div class="vat-cell">All prices inclusive of VAT at 16%</div>
+      <div class="gt-cell">
+        <div class="gl">GRAND TOTAL</div>
+        <div class="ga">KES 1,783,000</div>
+      </div>
+    </div>
+  </div>
+
+  <p class="closing">We trust you will find our offer satisfactory and look forward to your favourable consideration.</p>
+
+  <div class="sig-row">
+    <div class="sig-col">Authorised Signature</div>
+    <div class="sig-col">Name &amp; Designation</div>
+    <div class="sig-col">Company Stamp / Date</div>
+  </div>
+
+  <div class="page-footer">
+    <span>Crisima General Supplies</span>
+    <span>Nairobi, Kenya</span>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quotation – Greatpeak Merchants</title>
+<style>
+  * { box-sizing:border-box; margin:0; padding:0 }
+  body { font-family:'Arial',sans-serif; background:#f5eef2; padding:30px 16px }
+  @page { margin:0 }
+  @media print { body { background:white; padding:0 } }
+
+  /* BOLD ARCH / CORNER-CUT HEADER — burgundy with gold accents */
+  /* Layout: header has logo+name left panel, bold corner gold box top-right */
+  .page { max-width:860px; margin:0 auto; background:white;
+          box-shadow:0 6px 32px rgba(0,0,0,0.13); overflow:hidden }
+
+  /* HEADER */
+  .header { background:#6B1040; padding:0; position:relative; overflow:hidden }
+  .header::before { content:''; position:absolute; bottom:-30px; right:-30px;
+                    width:180px; height:180px; border-radius:50%;
+                    background:rgba(212,168,32,0.08) }
+  .hdr-inner { display:flex; align-items:stretch; min-height:114px }
+
+  /* Left — logo + name */
+  .hdr-brand { flex:1; padding:22px 28px; display:flex; align-items:center; gap:18px }
+  .brand-text h1 { font-size:23px; font-weight:900; color:white; letter-spacing:0.3px }
+  .brand-text .tag { font-size:9px; color:#D4A820; letter-spacing:2px; margin-top:4px }
+  .brand-text .loc { font-size:9px; color:rgba(255,255,255,0.4); margin-top:2px }
+
+  /* Right — corner document label */
+  .hdr-docbadge { width:180px; background:#D4A820; flex-shrink:0;
+                   display:flex; flex-direction:column; align-items:center;
+                   justify-content:center; padding:16px;
+                   clip-path:polygon(20px 0%, 100% 0%, 100% 100%, 0% 100%) }
+  .hdb-label { font-size:8px; color:#6B1040; font-weight:700; letter-spacing:2px }
+  .hdb-word { font-size:22px; font-weight:900; color:#6B1040; line-height:1;
+               white-space:nowrap }
+
+  .gold-rule { height:4px; background:#D4A820 }
+  .dark-rule { height:2px; background:rgba(107,16,64,0.15) }
+
+  /* META BAND */
+  .meta-band { display:flex; background:#fdf7f9; border-bottom:2px solid #6B1040 }
+  .mb-cell { flex:1; padding:11px 20px; border-right:1px solid #e8d0da }
+  .mb-cell:last-child { border-right:none }
+  .mb-label { font-size:8px; color:#6B1040; font-weight:700; letter-spacing:1.5px;
+               text-transform:uppercase; margin-bottom:3px }
+  .mb-value { font-size:12px; font-weight:700; color:#6B1040 }
+
+  /* SUBJECT */
+  .subject-area { padding:11px 28px; background:#6B1040 }
+  .sa-label { font-size:8px; color:rgba(212,168,32,0.8); font-weight:700;
+               letter-spacing:2px; text-transform:uppercase; margin-bottom:3px }
+  .sa-value { font-size:12px; font-weight:700; color:white }
+
+  .intro { padding:16px 28px 6px; font-size:12px; color:#555; line-height:1.7 }
+
+  /* TABLE */
+  table.items { width:100%; border-collapse:collapse; font-size:12px }
+  table.items thead tr { background:#6B1040 }
+  table.items thead th { color:white; padding:10px 14px; font-size:11px }
+  table.items tbody td { padding:12px 14px; border-bottom:1px solid #f5e8ef; color:#333 }
+  table.items tbody tr:nth-child(even) { background:#fdf5f8 }
+  table.items .num { text-align:center; color:#D4A820; font-weight:900; font-size:14px }
+  table.items .right { text-align:right }
+  table.items .center { text-align:center }
+
+  /* TOTAL */
+  .total-area { display:flex; justify-content:space-between; align-items:center;
+                 padding:16px 28px; border-top:2px solid #6B1040 }
+  .ta-vat { font-size:10px; color:#aaa; font-style:italic }
+  .ta-gt { background:#6B1040; padding:14px 28px; display:flex;
+             align-items:center; gap:24px; min-width:300px }
+  .ta-gt .gl { font-size:10px; font-weight:700; color:rgba(255,255,255,0.6);
+                letter-spacing:2px; text-transform:uppercase }
+  .ta-gt .ga { font-size:22px; font-weight:900; color:#D4A820 }
+
+  .closing { padding:14px 28px 4px; font-size:12px; color:#555; line-height:1.7 }
+
+  .sig-row { display:flex; gap:24px; padding:16px 28px 24px }
+  .sig-col { flex:1; border-top:2px solid #D4A820; padding-top:6px;
+              font-size:10px; color:#aaa }
+
+  /* FOOTER */
+  .footer { background:#6B1040; padding:9px 28px;
+             display:flex; justify-content:space-between; align-items:center }
+  .footer .fl { font-size:11px; font-weight:700; color:#D4A820 }
+  .footer .fr { font-size:10px; color:rgba(255,255,255,0.45) }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="hdr-inner">
+      <div class="hdr-brand">
+        <svg width="64" height="64" viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
+          <!-- Mountain peak / caret shape -->
+          <polygon points="34,6 62,50 6,50" fill="none" stroke="#D4A820" stroke-width="2.5"/>
+          <polygon points="34,18 54,50 14,50" fill="rgba(212,168,32,0.12)"/>
+          <text x="34" y="43" text-anchor="middle" font-family="Arial" font-weight="900"
+                font-size="13" fill="#D4A820">GPM</text>
+          <line x1="20" y1="56" x2="48" y2="56" stroke="#D4A820" stroke-width="1.5" opacity="0.5"/>
+          <text x="34" y="64" text-anchor="middle" font-family="Arial" font-weight="600"
+                font-size="7" fill="rgba(255,255,255,0.5)">MERCHANTS</text>
+        </svg>
+        <div class="brand-text">
+          <h1>Greatpeak Merchants</h1>
+          <div class="tag">SUPPLY &nbsp;·&nbsp; PROCUREMENT &nbsp;·&nbsp; SOLUTIONS</div>
+          <div class="loc">Nairobi, Kenya &nbsp;·&nbsp; greatpeakmerchants@gmail.com</div>
+        </div>
+      </div>
+      <div class="hdr-docbadge">
+        <div class="hdb-label">OFFICIAL</div>
+        <div class="hdb-word">QUOTATION</div>
+      </div>
+    </div>
+  </div>
+  <div class="gold-rule"></div>
+  <div class="dark-rule"></div>
+
+  <div class="meta-band">
+    <div class="mb-cell">
+      <div class="mb-label">Addressed To</div>
+      <div class="mb-value">Ministry of Foreign Affairs Kenya</div>
+    </div>
+    <div class="mb-cell">
+      <div class="mb-label">Attention</div>
+      <div class="mb-value">Head Office</div>
+    </div>
+    <div class="mb-cell">
+      <div class="mb-label">Reference</div>
+      <div class="mb-value">GPM/QTN/APR/2026/01</div>
+    </div>
+    <div class="mb-cell">
+      <div class="mb-label">Date</div>
+      <div class="mb-value">11 April 2026</div>
+    </div>
+  </div>
+
+  <div class="subject-area">
+    <div class="sa-label">Subject</div>
+    <div class="sa-value">Supply, Delivery and Installation of Executive Chairs as per Approved Sample (2nd Floor)</div>
+  </div>
+
+  <p class="intro">We are glad to submit our price quotation for your kind consideration and evaluation as specified below.</p>
+
+  <table class="items">
+    <thead>
+      <tr>
+        <th style="width:5%;text-align:center">#</th>
+        <th style="text-align:left">Item Description</th>
+        <th style="width:10%;text-align:center">Qty</th>
+        <th style="width:17%;text-align:right">Unit Price (KES)</th>
+        <th style="width:17%;text-align:right">Total (KES)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="num">1</td><td>Executive Chair as per Approved Sample</td><td class="center">15 Pcs</td><td class="right">85,000</td><td class="right">1,275,000</td></tr>
+    </tbody>
+  </table>
+
+  <div class="total-area">
+    <span class="ta-vat">All prices inclusive of VAT at 16%</span>
+    <div class="ta-gt">
+      <span class="gl">Grand Total</span>
+      <span class="ga">KES 1,275,000</span>
+    </div>
+  </div>
+
+  <p class="closing">We remain at your disposal for any clarification and hope to be of service.</p>
+
+  <div class="sig-row">
+    <div class="sig-col">Authorised Signature</div>
+    <div class="sig-col">Name &amp; Designation</div>
+    <div class="sig-col">Company Stamp / Date</div>
+  </div>
+
+  <div class="footer">
+    <span class="fl">Greatpeak Merchants</span>
+    <span class="fr">Nairobi, Kenya &nbsp;·&nbsp; greatpeakmerchants@gmail.com</span>
+  </div>
+
+</div>
+</body>
+</html>
